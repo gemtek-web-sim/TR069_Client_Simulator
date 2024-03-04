@@ -1,0 +1,10 @@
+# ignore test file
+test/*
+test*
+
+# ignore log file
+log/*
+
+# package
+node_modules/*
+package-lock.json

@@ -1,0 +1,21 @@
+{
+  "name": "tr069clinet_simulator",
+  "version": "1.0.0",
+  "description": "TR-069 Client simulator",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./startServer.sh",
+    "install": "npm install body-parser express path fs"
+  },
+  "keywords": [
+    "TR-069",
+    "Client",
+    "CWMP"
+  ],
+  "author": "Alfie_Bui",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
