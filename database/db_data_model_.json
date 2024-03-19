@@ -1,0 +1,4826 @@
+[
+  {
+    "Parameter": "Device.DeviceInfo",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "Zal2lTOrzTO7AVR5"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.Manufacturer",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Gemtek",
+    "Value type": "xsd:string",
+    "_id": "WAu0Dsey6kLykDh3"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.ManufacturerOUI",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "000000",
+    "Value type": "xsd:string",
+    "_id": "mUvIH0QCC9ySUqMZ"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.ModelName",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "TB-362",
+    "Value type": "xsd:string",
+    "_id": "2vPkIKjROw3aQLX9"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.ProductClass",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "TB-362",
+    "Value type": "xsd:string",
+    "_id": "kclMZMhtO00Mji62"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.SerialNumber",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "000000000000",
+    "Value type": "xsd:string",
+    "_id": "qXhLMOibC5LX1JwP"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.HardwareVersion",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "PRX300 rev 1.2, PRX321-HGU-11AX",
+    "Value type": "xsd:string",
+    "_id": "EGDFx8oLx9Ioqmsb"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.SoftwareVersion",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "GemtekSW-v0.8.7.2",
+    "Value type": "xsd:string",
+    "_id": "yMs6IhAbA48hNBQt"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.VendorLogFileNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:unsignedInt",
+    "_id": "ZoGvfcoOMTpljzPY"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.VendorLogFile.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "5rgAdPTblsimdjWO"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.VendorLogFile.1.Alias",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "cpe-1",
+    "Value type": "xsd:string",
+    "_id": "dRSldHIs2wnRvha1"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.VendorLogFile.1.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "/log/messages",
+    "Value type": "xsd:string",
+    "_id": "J3gOgNjZkH48oMvE"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.VendorLogFile.1.MaximumSize",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1000000",
+    "Value type": "xsd:unsignedInt",
+    "_id": "L3iXpHkP5rr3NYOr"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.VendorLogFile.1.X_GTK_IPAddress",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "5mYefhcHfo3zpaLv"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.VendorLogFile.1.X_GTK_Port",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "CvvdlTV0xpPmWg35"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.VendorLogFile.1.X_GTK_FilterString",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "fdXEPYE87jsmNEtE"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.VendorLogFile.1.X_GTK_LogFilePath",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "Fk9sjroap2wXw5Fb"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.VendorLogFile.1.X_GTK_Destination",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "q4UkgWPjnqxdDyMe"
+  },
+  {
+    "Parameter": "Device.DeviceInfo.VendorLogFile.1.X_GTK_Remote",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:boolean",
+    "_id": "ZuVQ6MIxUKDdWrI9"
+  },
+  {
+    "Parameter": "Device.DHCPv4.",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "flj11sRDOUfk0AWM"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "aXUTmfJ9GBYSEhBg"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server.PoolNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:unsignedInt",
+    "_id": "LlHkHWqcMoJoDJEW"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server.Pool.1.",
+    "Object": "TRUE",
+    "Writable": "",
+    "Value": "",
+    "Value type": "",
+    "_id": "zaQwz75jv65JhOfi"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server.Pool.1.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "jkurLA1QN9Plb478"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server.Pool.1.MinAddress",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "192.168.1.2",
+    "Value type": "xsd:string",
+    "_id": "xn6XvzZbGJwZUSUV"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server.Pool.1.MaxAddress",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "192.168.1.254",
+    "Value type": "xsd:string",
+    "_id": "Oo5tTdXdA5S0xI0J"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server.Pool.1.LeaseTime",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "86400",
+    "Value type": "xsd:int",
+    "_id": "IiDx8pgQxceZJWlm"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server.Pool.1.SubnetMask",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "255.255.255.0",
+    "Value type": "xsd:string",
+    "_id": "fX8cDMT5QXCx2mxI"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server.Pool.1.IPRouters",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "192.168.1.1",
+    "Value type": "xsd:string",
+    "_id": "CVKeyjI1Ii5vtDLX"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server.Pool.1.DNSServers",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "192.168.1.1",
+    "Value type": "xsd:string",
+    "_id": "hE5YRRdy8w8POJ2m"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server.Pool.1.StaticAddressNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "T1cBDWk4Axm5nBLr"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server.Pool.1.ReservedAddresses",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "nM6U8L8iApZWO4SJ"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server.Pool.1.StaticAddress.1.",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "bm1Gz5jOKE3OoMhc"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server.Pool.1.StaticAddress.1.Enable",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:boolean",
+    "_id": "SWXo7OHRQWcam1Uy"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server.Pool.1.StaticAddress.1.Chaddr",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "HyWcF6IbiKVbZpw6"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Server.Pool.1.StaticAddress.1.Yiaddr",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "CCSPPeL6KS6bge7h"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Relay",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "u98ERpb2aYC9oV9j"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Relay.ForwardingNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "CZzqTNgpQSvyC0LS"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Relay.Forwarding.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "0BDvLXCFYMjg1MFb"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Relay.Forwarding.1.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:boolean",
+    "_id": "Dmm4d87XjedePcmo"
+  },
+  {
+    "Parameter": "Device.DHCPv4.Relay.Forwarding.1.DHCPServerIPAddress",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "CJIXfirzp12n2i6r"
+  },
+  {
+    "Parameter": "Device.DHCPv6",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "iZmbGFOsXWvHIzkt"
+  },
+  {
+    "Parameter": "Device.DHCPv6.ClientNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:unsignedInt",
+    "_id": "3QjgaDLvBc9KMQFD"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "Mudm3NczLdxJZ0B4"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.Enable",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "EArSZjsA86D0SkJS"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.Interface",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "Ee3yyPw2xGeaRp4q"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Enabled",
+    "Value type": "xsd:string",
+    "_id": "fgxd3Io1M9QD7NaV"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.DUID",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "1KQVymnoSlrBSMmG"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.RequestAddresses",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "OAdZ0wE9CGmYECAf"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.RequestPrefixes",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:boolean",
+    "_id": "PAGZdTXopiRSexhQ"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.RequestedOptions",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:unsignedInt",
+    "_id": "cvVyhBa06XRlfIDP"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.SentOptionNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "XhVpHJmAiP9NTKZx"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.ReceivedOptionNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:unsignedInt",
+    "_id": "quPEJhVOqMbV883A"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.ReceivedOption.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "9f865CqVnrPdYIx1"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.ReceivedOption.1.Tag",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:unsignedInt",
+    "_id": "Y06UgIcFhK3qsDCz"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.ReceivedOption.1.Value",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "YaXw7iel8nGvgiNi"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.SentOption.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "UCxq3wAIBP33EXdm"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.SentOption.1.Enable",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:boolean",
+    "_id": "y9GjsTTECcQDiwAT"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.SentOption.1.Tag",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:unsignedInt",
+    "_id": "kBm8eFMNThCN17v7"
+  },
+  {
+    "Parameter": "Device.DHCPv6.Client.1.SentOption.1.Value",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "0egO0rQCl2ZYX3Az"
+  },
+  {
+    "Parameter": "Device.DNS",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "T8TahEZCIR1ker7A"
+  },
+  {
+    "Parameter": "Device.DNS.SupportedRecordTypes",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "xus54WPyAUz2RsPo"
+  },
+  {
+    "Parameter": "Device.DNS.Client",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "ZArysEXyE6FCg7bN"
+  },
+  {
+    "Parameter": "Device.DNS.Client.ServerNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "3S9SHVXQUYynx10e"
+  },
+  {
+    "Parameter": "Device.DNS.Client.Server.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "a1JgBkFvNLIDumyC"
+  },
+  {
+    "Parameter": "Device.DNS.Client.Server.1.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "NmRPTjqUeNDLpugO"
+  },
+  {
+    "Parameter": "Device.DNS.Client.Server.1.DNSServer",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "i8o9DSmmSReV0mul"
+  },
+  {
+    "Parameter": "Device.DNS.Client.Server.1.Interface",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "T7DGApbcJHYLr4ov"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Client.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "hzmQd5zMOp59ohEo"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Client.1.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Disabled",
+    "Value type": "xsd:string",
+    "_id": "cjvWl9B9HRAHKICB"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Client.1.Alisa",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "cpe-1",
+    "Value type": "xsd:string",
+    "_id": "Zx1ij0hIq1KVjDdj"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Client.1.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:boolean",
+    "_id": "spY5zEEgSCECnTpV"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Client.1.Server",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Device.DynamicDNS.Server.1",
+    "Value type": "xsd:string",
+    "_id": "QahRzU96rJybIQse"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Client.1.Interface",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Device.IP.Interface.2",
+    "Value type": "xsd:string",
+    "_id": "cHt1O3Asibxyi4OO"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Client.1.Username",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "your_username",
+    "Value type": "xsd:string",
+    "_id": "DXhiD23v02jZ2AtS"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Client.1.Password",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "xQjhAUSqaNaADRsY"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Client.1.X_GTK_Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "ji0MC4o9VYtVb8kZ"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Client.1.Hostname.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "1znwSTPC99qUE8hr"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Client.1.Hostname.1.Name",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "yourhost.example.com",
+    "Value type": "xsd:string",
+    "_id": "D8Nfmr96dLBf6jC9"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Server.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "cG9wv4u7IxNs4c1G"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Server.1.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "dyn.com",
+    "Value type": "xsd:string",
+    "_id": "lXa8qqAHi70oooVk"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Server.1.Alias",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "cpe-1",
+    "Value type": "xsd:string",
+    "_id": "Me4mzL9arBLLZv7m"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Server.2.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "no-ip.com",
+    "Value type": "xsd:string",
+    "_id": "ancSFwuUjlLuKL4D"
+  },
+  {
+    "Parameter": "Device.DynamicDNS.Server.2.Alias",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "cpe-2",
+    "Value type": "xsd:string",
+    "_id": "oQCZr4iPDiwEDQDH"
+  },
+  {
+    "Parameter": "Device.Ethernet.",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "8Of1neJPTGns6Cdt"
+  },
+  {
+    "Parameter": "Device.Ethernet.InterfaceNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "2",
+    "Value type": "xsd:unsignedInt",
+    "_id": "Pdf6rkoYcbAXpUh6"
+  },
+  {
+    "Parameter": "Device.Ethernet.LinkNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "3",
+    "Value type": "xsd:unsignedInt",
+    "_id": "Fe0184nd5JJrPK8c"
+  },
+  {
+    "Parameter": "Device.Ethernet.Interface.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "5E653BULnKETWqJa"
+  },
+  {
+    "Parameter": "Device.Ethernet.Interface.1.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Up",
+    "Value type": "xsd:string",
+    "_id": "8FRg4Sxb1n6DgR8J"
+  },
+  {
+    "Parameter": "Device.Ethernet.Interface.1.Alias",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "IKTR5iqVac8qagbt"
+  },
+  {
+    "Parameter": "Device.Ethernet.Interface.1.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "eth0_0",
+    "Value type": "xsd:string",
+    "_id": "cNpFevH9PWrOBTOF"
+  },
+  {
+    "Parameter": "Device.Ethernet.Interface.1.MACAddress",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "02:E0:92:00:01:41",
+    "Value type": "xsd:string",
+    "_id": "hZ5JEgnPixQdrUqu"
+  },
+  {
+    "Parameter": "Device.Ethernet.Interface.1.MaxBitRate",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "-1",
+    "Value type": "xsd:unsignedInt",
+    "_id": "B5EtiEswCaAdW4U5"
+  },
+  {
+    "Parameter": "Device.Ethernet.Interface.1.DuplexMode",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Auto",
+    "Value type": "xsd:string",
+    "_id": "AQGit3pcTBmLsbbx"
+  },
+  {
+    "Parameter": "Device.Ethernet.Interface.2",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "8rsNZSLrMHeaR8T1"
+  },
+  {
+    "Parameter": "Device.Ethernet.Interface.2.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Unknown",
+    "Value type": "",
+    "_id": "WBqiJEAGZysm1F2U"
+  },
+  {
+    "Parameter": "Device.Ethernet.Interface.2.Alias",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "",
+    "_id": "Yjiff8VsEgbovlFC"
+  },
+  {
+    "Parameter": "Device.Ethernet.Interface.2.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "eth0_1",
+    "Value type": "",
+    "_id": "KhFOcAX6hDEi0Z1s"
+  },
+  {
+    "Parameter": "Device.Ethernet.Interface.2.MACAddress",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "02:E0:92:00:01:42",
+    "Value type": "",
+    "_id": "Lzt0SevAWJ0n2mJP"
+  },
+  {
+    "Parameter": "Device.Ethernet.Interface.2.MaxBitRate",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "-1",
+    "Value type": "",
+    "_id": "lCbOFnT5ybkoLd8h"
+  },
+  {
+    "Parameter": "Device.Ethernet.Interface.2.DuplexMode",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Auto",
+    "Value type": "",
+    "_id": "i88r0V6HPN3BG4oS"
+  },
+  {
+    "Parameter": "Device.Ethernet.Link.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "HLF3nyVEt1xwFupT"
+  },
+  {
+    "Parameter": "Device.Ethernet.Link.1.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Up",
+    "Value type": "xsd:string",
+    "_id": "eg2RK6ncuhjX0dKA"
+  },
+  {
+    "Parameter": "Device.Ethernet.Link.1.Alias",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "cpe-1",
+    "Value type": "xsd:string",
+    "_id": "I7LAtn4XmmXFkkjh"
+  },
+  {
+    "Parameter": "Device.Ethernet.Link.1.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "br-lan",
+    "Value type": "xsd:string",
+    "_id": "jWvw8uLglInCfymn"
+  },
+  {
+    "Parameter": "Device.Ethernet.Link.1.LowerLayers",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "YuQFrLh6lOJrJhu0"
+  },
+  {
+    "Parameter": "Device.Ethernet.Link.1.MACAddress",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "02:E0:92:00:01:41",
+    "Value type": "xsd:string",
+    "_id": "j7QJwG2Hzqp0ZiYr"
+  },
+  {
+    "Parameter": "Device.Ethernet.VLANTermination.",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "LFE2GdAXaqNcCtCP"
+  },
+  {
+    "Parameter": "Device.Ethernet.VLANTermination.LowerLayers",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "GdL5gVdP0ZsK4bPg"
+  },
+  {
+    "Parameter": "Device.Ethernet.VLANTermination.VLANID",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:unsignedInt",
+    "_id": "hNiyjzN2X62xIloJ"
+  },
+  {
+    "Parameter": "Device.Firewall.",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "Rh1MFZyI2dF94Vgs"
+  },
+  {
+    "Parameter": "Device.Firewall.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "eMP6IH1EBv7lOQmr"
+  },
+  {
+    "Parameter": "Device.Firewall.Config",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Advanced",
+    "Value type": "xsd:string",
+    "_id": "vmUqMmxaMSDeQ2Tx"
+  },
+  {
+    "Parameter": "Device.Firewall.Chain.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "dDDpfTd954ASyURy"
+  },
+  {
+    "Parameter": "Device.Firewall.Chain.1.Rule.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "uK6zXidPq4jzJYco"
+  },
+  {
+    "Parameter": "Device.Firewall.Chain.1.Rule.1.Description",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Telnet",
+    "Value type": "xsd:string",
+    "_id": "en4BFGOAAapp0EoO"
+  },
+  {
+    "Parameter": "Device.Firewall.Chain.1.Rule.1.DestPort",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "23",
+    "Value type": "xsd:int",
+    "_id": "TbtDHKGhFLhj4tvK"
+  },
+  {
+    "Parameter": "Device.Firewall.Chain.1.Rule.1.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "r7zsN9rAuzvxPxS5"
+  },
+  {
+    "Parameter": "Device.Firewall.Chain.1.Rule.2.Description",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "SSH",
+    "Value type": "xsd:string",
+    "_id": "iXzC7ZcEZuYNwEHd"
+  },
+  {
+    "Parameter": "Device.Firewall.Chain.1.Rule.2.DestPort",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "22",
+    "Value type": "xsd:int",
+    "_id": "MJ2QQdTfjn6IHkNU"
+  },
+  {
+    "Parameter": "Device.Firewall.Chain.1.Rule.2.Enable",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "ZdWWKrZclLcoA4i2"
+  },
+  {
+    "Parameter": "Device.Firewall.Chain.1.Rule.3.Description",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "HTTPS",
+    "Value type": "xsd:string",
+    "_id": "2mWdyrxDtQfu8dKS"
+  },
+  {
+    "Parameter": "Device.Firewall.Chain.1.Rule.3.DestPort",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "443",
+    "Value type": "xsd:int",
+    "_id": "xrDXSF5JuKpxLcVR"
+  },
+  {
+    "Parameter": "Device.Firewall.Chain.1.Rule.3.Enable",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "hBmxe5wE8pYYX5YQ"
+  },
+  {
+    "Parameter": "Device.Firewall.Chain.1.Rule.1.Description",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "ICMP",
+    "Value type": "xsd:string",
+    "_id": "FZbhkzAOE9tozDAq"
+  },
+  {
+    "Parameter": "Device.Firewall.Chain.1.Rule.1.DestPort",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "-1",
+    "Value type": "xsd:int",
+    "_id": "sGupv47ooLfZ22Kb"
+  },
+  {
+    "Parameter": "Device.Firewall.Chain.1.Rule.1.Enable",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "X4YNlBD3yQKPi2uh"
+  },
+  {
+    "Parameter": "Device.Firewall.X_GTK_ParentalControl.",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "pfIyAzVgoZaFfyvr"
+  },
+  {
+    "Parameter": "Device.Firewall.X_GTK_ParentalControl.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:boolean",
+    "_id": "M8tShJt5jjq4fRVR"
+  },
+  {
+    "Parameter": "Device.Firewall.X_GTK_ParentalControl.DefaultAction",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Accept",
+    "Value type": "xsd:boolean",
+    "_id": "umyrPlKv8wirmiWB"
+  },
+  {
+    "Parameter": "Device.Firewall.X_GTK_ParentalControl.RuleNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "773ITCgzqoklBHUp"
+  },
+  {
+    "Parameter": "Device.Firewall.X_GTK_ParentalControl.Rule.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "EseIFobCKsjQWl1P"
+  },
+  {
+    "Parameter": "Device.Firewall.X_GTK_ParentalControl.Rule.1.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "7gdjmhJbU17hWKb0"
+  },
+  {
+    "Parameter": "Device.Firewall.X_GTK_ParentalControl.Rule.1.PolicyName",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "parentalControl",
+    "Value type": "xsd:string",
+    "_id": "g8I8jV2jdKTrRSI7"
+  },
+  {
+    "Parameter": "Device.Firewall.X_GTK_ParentalControl.Rule.1.MACAddress",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "AB:AB:AB:AB:AB:AB",
+    "Value type": "xsd:string",
+    "_id": "2LgSwOYDBeYB8viA"
+  },
+  {
+    "Parameter": "Device.Firewall.X_GTK_ParentalControl.Rule.1.Type",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "url",
+    "Value type": "xsd:string",
+    "_id": "fzqooHBwTaTHLAJg"
+  },
+  {
+    "Parameter": "Device.Firewall.X_GTK_ParentalControl.Rule.1.List",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "urltest.com",
+    "Value type": "xsd:string",
+    "_id": "TUDYAal8inJSLUNp"
+  },
+  {
+    "Parameter": "Device.Firewall.X_GTK_ParentalControl.Rule.1.TimeStart",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "11:46",
+    "Value type": "xsd:string",
+    "_id": "yrm25n7VdVJF8V4h"
+  },
+  {
+    "Parameter": "Device.Firewall.X_GTK_ParentalControl.Rule.1.TimeEnd",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "12:47",
+    "Value type": "xsd:string",
+    "_id": "cT74TOVBs109jx9A"
+  },
+  {
+    "Parameter": "Device.Firewall.X_GTK_ParentalControl.Rule.1.Target",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Accept",
+    "Value type": "xsd:string",
+    "_id": "LbD7ZdcpjE4wRm7E"
+  },
+  {
+    "Parameter": "Device.Firewall.X_GTK_ParentalControl.Rule.1.DaysOfTheWeek",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Thu",
+    "Value type": "xsd:string",
+    "_id": "6Y3rYFjZvCet3fOk"
+  },
+  {
+    "Parameter": "Device.Hosts",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "ZAgLTy3NfOIuRUrQ"
+  },
+  {
+    "Parameter": "Device.Hosts.HostNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:unsignedInt",
+    "_id": "GPAvb8d4W2VXK7hp"
+  },
+  {
+    "Parameter": "Device.Hosts.Host.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "fR71hL70DxoxUMCo"
+  },
+  {
+    "Parameter": "Device.Hosts.Host.1.PhysAddress",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "50:eb:f6:d9:cc:79",
+    "Value type": "xsd:string",
+    "_id": "BhYTXQYh5jrhA6tk"
+  },
+  {
+    "Parameter": "Device.Hosts.Host.1.IPAddress",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "192.168.1.5",
+    "Value type": "xsd:string",
+    "_id": "Rv5Moo9uoI2093gW"
+  },
+  {
+    "Parameter": "Device.Hosts.Host.1.HostName",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Unknown",
+    "Value type": "xsd:string",
+    "_id": "P6vq17ojzMcy1tMx"
+  },
+  {
+    "Parameter": "Device.Hosts.Host.1.IPv4AddressNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:unsignedInt",
+    "_id": "n95juPgbL6jQalEl"
+  },
+  {
+    "Parameter": "Device.ManagementServer",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "DrmErtZBogBjBrKa"
+  },
+  {
+    "Parameter": "Device.ManagementServer.EnableCWMP",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "cz8PSk6U2VMvjkBT"
+  },
+  {
+    "Parameter": "Device.ManagementServer.URL",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "http://192.168.1.5:7547",
+    "Value type": "xsd:string",
+    "_id": "crg0VdoRvX4Qsc4E"
+  },
+  {
+    "Parameter": "Device.ManagementServer.Username",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "admin",
+    "Value type": "xsd:string",
+    "_id": "kgjbHC1wpntnQJkS"
+  },
+  {
+    "Parameter": "Device.ManagementServer.Password",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "admin",
+    "Value type": "xsd:string",
+    "_id": "8ixaJ6QLVIFuaNfC"
+  },
+  {
+    "Parameter": "Device.ManagementServer.PeriodicInformEnable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "fL7AILhoZnc1UkUR"
+  },
+  {
+    "Parameter": "Device.ManagementServer.PeriodicInformInterval",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "300",
+    "Value type": "xsd:unsignedInt",
+    "_id": "bV0YsqsRPa8Y1WWT"
+  },
+  {
+    "Parameter": "Device.ManagementServer.PeriodicInformTime",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1970-01-01T10:47:24.153Z",
+    "Value type": "DateTime",
+    "_id": "Ea4hpv73x72djkQL"
+  },
+  {
+    "Parameter": "Device.ManagementServer.ParameterKey",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "zscjE4maU58CRHbI"
+  },
+  {
+    "Parameter": "Device.ManagementServer.ConnectionRequestURL",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "http://192.168.1.1:7547/",
+    "Value type": "xsd:string",
+    "_id": "zBeSg4J576C86OnP"
+  },
+  {
+    "Parameter": "Device.ManagementServer.ConnectionRequestUsername",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "000000-TB%2D362-000000000000000",
+    "Value type": "xsd:string",
+    "_id": "Dh9sY64tBfAnUhyH"
+  },
+  {
+    "Parameter": "Device.ManagementServer.ConnectionRequestPassword",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "x2m0EGjpBzRO4lU0"
+  },
+  {
+    "Parameter": "Device.ManagementServer.UpgradesManaged",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:boolean",
+    "_id": "aGB5rQeweqvMfanL"
+  },
+  {
+    "Parameter": "Device.ManagementServer.CWMPRetryMinimumWaitInterval",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "5",
+    "Value type": "xsd:unsignedInt",
+    "_id": "GmJjAWiQPlj9oXRI"
+  },
+  {
+    "Parameter": "Device.ManagementServer.CWMPRetryIntervalMultiplier",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "2000",
+    "Value type": "xsd:unsignedInt",
+    "_id": "nJrnt2RlMLLx5LF6"
+  },
+  {
+    "Parameter": "Device.ManagementServer.STUNEnable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:boolean",
+    "_id": "QzpYKrX6bIutvnqA"
+  },
+  {
+    "Parameter": "Device.ManagementServer.STUNServerAddress",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "stun.gatespace.net",
+    "Value type": "xsd:string",
+    "_id": "gZDXZ633KZTLwV8O"
+  },
+  {
+    "Parameter": "Device.ManagementServer.STUNServerPort",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "3487",
+    "Value type": "xsd:unsignedInt",
+    "_id": "bdScoQLpIPkECIMD"
+  },
+  {
+    "Parameter": "Device.ManagementServer.STUNUsername",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "admin",
+    "Value type": "xsd:string",
+    "_id": "FdUtd1oX9hRbnSC0"
+  },
+  {
+    "Parameter": "Device.ManagementServer.STUNPassword",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "admin",
+    "Value type": "xsd:string",
+    "_id": "ceSPV34gHqIhrneY"
+  },
+  {
+    "Parameter": "Device.ManagementServer.STUNMaximumKeepAlivePeriod",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "90",
+    "Value type": "xsd:unsignedInt",
+    "_id": "27XRl5j8SHgYkhv2"
+  },
+  {
+    "Parameter": "Device.ManagementServer.STUNMinimumKeepAlivePeriod",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "30",
+    "Value type": "xsd:unsignedInt",
+    "_id": "sFxCwSVIKgVMTMBG"
+  },
+  {
+    "Parameter": "Device.ManagementServer.AliasBasedAddressing",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:boolean",
+    "_id": "9iJUgPlRgq3bEfGO"
+  },
+  {
+    "Parameter": "Device.ManagementServer.X_GTK_Interface",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "lan",
+    "Value type": "xsd:string",
+    "_id": "DZUJfr2oc2dv5YME"
+  },
+  {
+    "Parameter": "Device.NAT.",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "IEwiOMDQWi0HafPg"
+  },
+  {
+    "Parameter": "Device.NAT.PortMappingNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:unsignedInt",
+    "_id": "PIBEiI7ZN4Mzdrut"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_PortTriggeringNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:unsignedInt",
+    "_id": "aYzQ9NI4tb5Fsczw"
+  },
+  {
+    "Parameter": "Device.NAT.PortMapping.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "RzjT6xAOPceIpTYK"
+  },
+  {
+    "Parameter": "Device.NAT.PortMapping.1.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "8OyO06mFuYW0Wze8"
+  },
+  {
+    "Parameter": "Device.NAT.PortMapping.1.AllInterfaces",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "PfmTW7KUeY5sWq1N"
+  },
+  {
+    "Parameter": "Device.NAT.PortMapping.1.RemoteHost",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "10.46.172.56",
+    "Value type": "xsd:string",
+    "_id": "YiRK6mV72CiU4qWE"
+  },
+  {
+    "Parameter": "Device.NAT.PortMapping.1.ExternalPort",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "123",
+    "Value type": "xsd:unsignedInt",
+    "_id": "21oeG7VfiPdv8Wa5"
+  },
+  {
+    "Parameter": "Device.NAT.PortMapping.1.ExternalPortEndRange",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "456",
+    "Value type": "xsd:unsignedInt",
+    "_id": "iwpPpBlzowChb6AZ"
+  },
+  {
+    "Parameter": "Device.NAT.PortMapping.1.InternalPort",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "65",
+    "Value type": "xsd:unsignedInt",
+    "_id": "V6DaytlF70dYdO6q"
+  },
+  {
+    "Parameter": "Device.NAT.PortMapping.1.Protocol",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "u9BKqcPTwMCULJK8"
+  },
+  {
+    "Parameter": "Device.NAT.PortMapping.1.InternalClient",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "192.168.1.54",
+    "Value type": "xsd:string",
+    "_id": "U3RaQsGuYx6UocDJ"
+  },
+  {
+    "Parameter": "Device.NAT.PortMapping.1.Description",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "port_mapping",
+    "Value type": "xsd:string",
+    "_id": "VYpZnnqGWxQj5HIu"
+  },
+  {
+    "Parameter": "Device.NAT.PortMapping.1.X_GTK_INTERFACE",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "aMu8KdZd17BngpRs"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_DMZ",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "7cjnj17WHkN3YSO7"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_DMZ.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:boolean",
+    "_id": "ZxGIfwLMoMIFIwzW"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_DMZ.IPAddress",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0.0.0.0",
+    "Value type": "xsd:string",
+    "_id": "WL6eCqGhI7EY8Nft"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_PortTriggering.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "fJKmlYm4ENU2v4Nu"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_PortTriggering.1.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "J92l80xlzvJbU3Af"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_PortTriggering.1.TriggerPort",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "56",
+    "Value type": "xsd:unsignedInt",
+    "_id": "uHiKURkLbGHuQvdU"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_PortTriggering.1.TriggerProtocol",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "TCP",
+    "Value type": "xsd:string",
+    "_id": "Og0U6xHocmmOzhC3"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_PortTriggering.1.TriggerPortEndRange",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "98",
+    "Value type": "xsd:unsignedInt",
+    "_id": "7wRY9WwRlvkYjMj6"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_PortTriggering.1.OpenPort",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "456",
+    "Value type": "xsd:unsignedInt",
+    "_id": "2vxCmlODj4K0Ztfm"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_PortTriggering.1.OpenPortEndRange",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "789",
+    "Value type": "xsd:unsignedInt",
+    "_id": "iazRQiFE4PvlfLyy"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_PortTriggering.1.OpenProtocol",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "TCP",
+    "Value type": "xsd:string",
+    "_id": "xvsexjNagPsdCUqp"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_PortTriggering.1.Alias",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "cpe-1",
+    "Value type": "xsd:string",
+    "_id": "Y1d5n2aMLQJqHXyZ"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_ALG",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "s3EViyZ2o55qzmTN"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_ALG.TFTP",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "ABI3i86XbtkMQeJ8"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_ALG.FTP",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "Wuk4BBeaIATg8QSW"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_ALG.SIP",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "NRuN9svuTHMbSCGr"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_ALG.H323",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "5G6oSenCNopx9dLK"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_ALG.PPTP",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "ZJMJVfTcGZPfkZ5i"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_ALG.L2TP",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "6OqlC1Xvprg9iKAG"
+  },
+  {
+    "Parameter": "Device.NAT.X_GTK_ALG.IPSec",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "4np8exdPv7ScmwZd"
+  },
+  {
+    "Parameter": "Device.Optical.",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "6ZxCz8m8t03904fW"
+  },
+  {
+    "Parameter": "Device.Optical.Interface.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "cvahzZwTuLr5M1m4"
+  },
+  {
+    "Parameter": "Device.Optical.Interface.1.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "O1.1, Off-sync state",
+    "Value type": "xsd:string",
+    "_id": "3CzqdItupN0rbvzP"
+  },
+  {
+    "Parameter": "Device.Optical.Interface.1.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "VANI0",
+    "Value type": "xsd:string",
+    "_id": "XE5IblU4G35bXBDh"
+  },
+  {
+    "Parameter": "Device.Optical.Interface.1.TXPower",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0.00 dBm",
+    "Value type": "xsd:int",
+    "_id": "Dr3hh4WLZyF3uJgZ"
+  },
+  {
+    "Parameter": "Device.Optical.Interface.1.RXPower",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0.00 dBm",
+    "Value type": "xsd:int",
+    "_id": "JlkaYKLSkb9gXQHL"
+  },
+  {
+    "Parameter": "Device.Optical.Interface.1.Temperature",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "48",
+    "Value type": "xsd:unsignedInt",
+    "_id": "nkLK1QuLUkwz4sUk"
+  },
+  {
+    "Parameter": "Device.Optical.Interface.1.Voltage",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "3,29",
+    "Value type": "xsd:unsignedInt",
+    "_id": "dKvjpRH17hkpXqmk"
+  },
+  {
+    "Parameter": "Device.PPP.",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "8MXSjl9fafIx4l68"
+  },
+  {
+    "Parameter": "Device.PPP.Interface.1",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "2RZ9WGZuZ46g0ZKH"
+  },
+  {
+    "Parameter": "Device.PPP.Interface.1.Username",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "sydNpEHACIl4HvEZ"
+  },
+  {
+    "Parameter": "Device.PPP.Interface.1.Password",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "2fhUeQX9bMIilJ6n"
+  },
+  {
+    "Parameter": "Device.PPP.Interface.1.MaxMRUSize",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:unsignedInt",
+    "_id": "upnNlmLd9QvHtbty"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "0msJIFqOeqltNjDY"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.1.StaticRoute",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:boolean",
+    "_id": "20uDMFwj7QA5r1BK"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.1.DestIPAddress",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "192.168.1.0",
+    "Value type": "xsd:string",
+    "_id": "ioYOz9MvcaUEeq3e"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.1.DestSubnetMask",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "255.255.255.0",
+    "Value type": "xsd:string",
+    "_id": "fV67yS5QHRRSorq7"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.1.GatewayIPAddress",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0.0.0.0",
+    "Value type": "xsd:string",
+    "_id": "S1eFXWbkd23XJfAm"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.1.Interface",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Device.IP.Interface.1",
+    "Value type": "xsd:string",
+    "_id": "iRxoQPQep3FlUhl2"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.1.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "TGLNUNpB4emEuP1Y"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.1.Alias",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "cpe-1",
+    "Value type": "xsd:string",
+    "_id": "szVg4VZnAFoIpcHi"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.1.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Enabled",
+    "Value type": "xsd:string",
+    "_id": "l7ZfcNQsgYxPY6Fp"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.2",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "lUe5gYQt1QGwTlBn"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.2.StaticRoute",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:boolean",
+    "_id": "ui6xSbaKlf5luiEF"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.2.DestIPAddress",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "192.168.2.0",
+    "Value type": "xsd:string",
+    "_id": "jYmreDVPnVk3oNGn"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.2.DestSubnetMask",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "255.255.255.0",
+    "Value type": "xsd:string",
+    "_id": "AzqVYBxN5a3MzFvr"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.2.GatewayIPAddress",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0.0.0.0",
+    "Value type": "xsd:string",
+    "_id": "xtzt7J2fAYbkJViX"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.2.Interface",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Device.IP.Interface.1",
+    "Value type": "xsd:string",
+    "_id": "bDfnT3AIZEmyJsFq"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.2.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "qburTqVET47zHevE"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.2.Alias",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "cpe-2",
+    "Value type": "xsd:string",
+    "_id": "vzDRlZCSECnMo2kQ"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv4Forwarding.2.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Enabled",
+    "Value type": "xsd:string",
+    "_id": "nzi6eRcHMAcZWO1u"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv6Forwarding.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "eYYArgasG6kMxBkY"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv6Forwarding.1.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "QrnKRTZXR6Q3Ne7F"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv6Forwarding.1.Origin",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "DHCPv6",
+    "Value type": "xsd:string",
+    "_id": "qoWyxF9pfbuTDB2x"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv6Forwarding.1.DestIPPrefix",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "fd00::/64",
+    "Value type": "xsd:string",
+    "_id": "42p8huXJMv2wEdY2"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv6Forwarding.1.NextHop",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "::",
+    "Value type": "xsd:string",
+    "_id": "Plk9nPhimpQkF9yg"
+  },
+  {
+    "Parameter": "Device.Routing.Router.1.IPv6Forwarding.1.Interface",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Device.IP.Interface.1",
+    "Value type": "xsd:string",
+    "_id": "aPzWi7DEVWcbSSnK"
+  },
+  {
+    "Parameter": "Device.SelfTestDiagnostics",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "N3gsP4MX8K8A74Ms"
+  },
+  {
+    "Parameter": "Device.SelfTestDiagnostics.DiagnosticsState",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "AoBNtHbrjx3vEjHp"
+  },
+  {
+    "Parameter": "Device.SelfTestDiagnostics.Results",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "w6IMbMfhtFHly0OQ"
+  },
+  {
+    "Parameter": "Device.Time",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "GMShSalcauXZYUoi"
+  },
+  {
+    "Parameter": "Device.Time.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "MFqIf4u9HxYBZBFp"
+  },
+  {
+    "Parameter": "Device.Time.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "iilIjUqxe26qAkMa"
+  },
+  {
+    "Parameter": "Device.Time.NTPServer1",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0.asia.pool.ntp.org",
+    "Value type": "xsd:string",
+    "_id": "JbrINSxu7747NsVe"
+  },
+  {
+    "Parameter": "Device.Time.NTPServer2",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1.asia.pool.ntp.org",
+    "Value type": "xsd:string",
+    "_id": "X3JNNxzlUvkdh5t7"
+  },
+  {
+    "Parameter": "Device.Time.NTPServer3",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "time.windows.com",
+    "Value type": "xsd:string",
+    "_id": "wkGEDzpjG3u4Xt71"
+  },
+  {
+    "Parameter": "Device.Time.NTPServer4",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "time-a.nist.gov",
+    "Value type": "xsd:string",
+    "_id": "YCJlAzAZAU44Hni1"
+  },
+  {
+    "Parameter": "Device.Time.NTPServer5",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "time-b.nist.gov",
+    "Value type": "xsd:string",
+    "_id": "u7MHPKcGjdHdX7Ds"
+  },
+  {
+    "Parameter": "Device.Time.CurrentLocalTime",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "2024-03-07 21:01:31",
+    "Value type": "dateTime",
+    "_id": "K7IQxcgUJxm7MZsl"
+  },
+  {
+    "Parameter": "Device.Time.X_GTK_TimeZoneLocation",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Asia/Kolkata(IST-5:30)",
+    "Value type": "xsd:string",
+    "_id": "pmjobaSAMik6rKye"
+  },
+  {
+    "Parameter": "Device.UPnP",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "SH6Xnr56Ck5AZLAE"
+  },
+  {
+    "Parameter": "Device.UPnP.Device",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "oaQq6fZIonj0Vx3L"
+  },
+  {
+    "Parameter": "Device.UPnP.Device.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:boolean",
+    "_id": "EHsT58h7bKegUpkg"
+  },
+  {
+    "Parameter": "Device.Users.",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "v9TtfpEKAUbs3WFi"
+  },
+  {
+    "Parameter": "Device.Users.UserNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "3",
+    "Value type": "xsd:unsignedInt",
+    "_id": "Vz24nG81SRMuuF0n"
+  },
+  {
+    "Parameter": "Device.Users.User.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "bY1E66ShlTzkHBer"
+  },
+  {
+    "Parameter": "Device.Users.User.1.Alias",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "cpe-1",
+    "Value type": "xsd:string",
+    "_id": "1tq8fSOyc1eb6YYf"
+  },
+  {
+    "Parameter": "Device.Users.User.1.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "O0irzoQXmyJnOtTk"
+  },
+  {
+    "Parameter": "Device.Users.User.1.RemoteAccessCapable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "HbuEYeHsvQLA1xII"
+  },
+  {
+    "Parameter": "Device.Users.User.1.Username",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "admin",
+    "Value type": "xsd:string",
+    "_id": "3kLG2XCNjzDpnjn8"
+  },
+  {
+    "Parameter": "Device.Users.User.1.Password",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "BsKlNHnyuEIoLIPj"
+  },
+  {
+    "Parameter": "Device.Users.User.1.X_GTK_FTP",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "d09RNR7I6xmcGe8B"
+  },
+  {
+    "Parameter": "Device.Users.User.1.X_GTK_NoFirstLogin",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "2SZTZE58PK3s7S9D"
+  },
+  {
+    "Parameter": "Device.Users.User.2",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "dPcsep5hCXQSKGLx"
+  },
+  {
+    "Parameter": "Device.Users.User.2.Alias",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "cpe-2",
+    "Value type": "xsd:string",
+    "_id": "3s31W0MFdJZHRGxZ"
+  },
+  {
+    "Parameter": "Device.Users.User.2.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:boolean",
+    "_id": "OsRwEihBMseUadSq"
+  },
+  {
+    "Parameter": "Device.Users.User.2.RemoteAccessCapable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "uXoXOiBkPdf2XHNP"
+  },
+  {
+    "Parameter": "Device.Users.User.2.Username",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "webest1",
+    "Value type": "xsd:string",
+    "_id": "gk3ucTAiQjYAU6x2"
+  },
+  {
+    "Parameter": "Device.Users.User.2.Password",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "MbR6rWirOTNd0lAY"
+  },
+  {
+    "Parameter": "Device.Users.User.2.X_GTK_FTP",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:boolean",
+    "_id": "23yJRfsepAGBAhif"
+  },
+  {
+    "Parameter": "Device.Users.User.2.X_GTK_NoFirstLogin",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "NZ9D92E15etAHONb"
+  },
+  {
+    "Parameter": "Device.Users.User.3",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "X6V9HXKM2tJ1pgI5"
+  },
+  {
+    "Parameter": "Device.Users.User.3.Alias",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "cpe-3",
+    "Value type": "xsd:string",
+    "_id": "cGLYw2IA8oz8KsRJ"
+  },
+  {
+    "Parameter": "Device.Users.User.3.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:boolean",
+    "_id": "n5W7GltqNa7kfu96"
+  },
+  {
+    "Parameter": "Device.Users.User.3.RemoteAccessCapable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "vkxApDtr5HcSQj87"
+  },
+  {
+    "Parameter": "Device.Users.User.3.Username",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "ftptest1",
+    "Value type": "xsd:string",
+    "_id": "jYbpwNttl2h1MODq"
+  },
+  {
+    "Parameter": "Device.Users.User.3.Password",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "9ArevPbmT0Qps7ta"
+  },
+  {
+    "Parameter": "Device.Users.User.3.X_GTK_FTP",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "IWLjwt7CBX2ZqEOd"
+  },
+  {
+    "Parameter": "Device.Users.User.3.X_GTK_NoFirstLogin",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "tMXBWqNbXt8yaRF0"
+  },
+  {
+    "Parameter": "Device.X_GTK_Mcast",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "HswTdvDJRpdRqbt5"
+  },
+  {
+    "Parameter": "Device.X_GTK_Mcast.UpStreamIntrfName",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "None",
+    "Value type": "xsd:string",
+    "_id": "pnDb8gXjP4TfWd7S"
+  },
+  {
+    "Parameter": "Device.X_GTK_Mcast.DownStreamIntrf",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "br-lan",
+    "Value type": "xsd:string",
+    "_id": "Q6i9vWMqA3EruhHS"
+  },
+  {
+    "Parameter": "Device.X_GTK_Mcast.IGMPParameters",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "VzTx0zqgEkHb24z4"
+  },
+  {
+    "Parameter": "Device.X_GTK_Mcast.IGMPParameters.SnoopingStatus",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "hw9yZ6GC8dOt0qTI"
+  },
+  {
+    "Parameter": "Device.X_GTK_Mcast.IGMPParameters.ProxyStatus",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "dEwFz8bDuJunj6vW"
+  },
+  {
+    "Parameter": "Device.X_GTK_Mcast.IGMPParameters.FastLeaveStatus",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "5XwMFUmVxS3ZPSQE"
+  },
+  {
+    "Parameter": "Device.X_GTK_Mcast.IGMPParameters.QueryRespInterval",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "10",
+    "Value type": "xsd:unsignedInt",
+    "_id": "DQJj0MpgxOJzZLbN"
+  },
+  {
+    "Parameter": "Device.X_GTK_Mcast.IGMPParameters.LastMemQueryInterval",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "2",
+    "Value type": "xsd:unsignedInt",
+    "_id": "1UWfguuNVclrzsZm"
+  },
+  {
+    "Parameter": "Device.X_GTK_Mcast.IGMPParameters.LastMemQueryCount",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "2",
+    "Value type": "xsd:unsignedInt",
+    "_id": "SiE5aYUBgRnIKDty"
+  },
+  {
+    "Parameter": "Device.X_GTK_RegID",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "O6cnlejgjHtLQsv6"
+  },
+  {
+    "Parameter": "Device.X_GTK_RegID.RegID",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "           MAXLINEAR ONU INTC92000140",
+    "Value type": "xsd:string",
+    "_id": "3xsWvvHBIecHCapF"
+  },
+  {
+    "Parameter": "Device.X_GTK_GuestAccess",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "OjUd1pCvL2lgp3Ku"
+  },
+  {
+    "Parameter": "Device.X_GTK_GuestAccess.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:boolean",
+    "_id": "GBeTuA5u0KkJf1Xk"
+  },
+  {
+    "Parameter": "Device.X_GTK_GuestAccess.RuleNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:unsignedInt",
+    "_id": "UKpgLhf5VaNNZbxo"
+  },
+  {
+    "Parameter": "Device.X_GTK_GuestAccess.Rule.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "0pyPqma2bDVyaAOo"
+  },
+  {
+    "Parameter": "Device.X_GTK_GuestAccess.Rule.1.SSIDName",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "guest_SSID",
+    "Value type": "xsd:string",
+    "_id": "0PNP0lxt3BGtwKf3"
+  },
+  {
+    "Parameter": "Device.X_GTK_GuestAccess.Rule.1.Radio",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "radio0",
+    "Value type": "xsd:string",
+    "_id": "p0wV4vMQUEjPbVYy"
+  },
+  {
+    "Parameter": "Device.X_GTK_GuestAccess.Rule.1.ModeEnabled",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "WPA2-Personal",
+    "Value type": "xsd:string",
+    "_id": "78BkpDNRtaRC2LVa"
+  },
+  {
+    "Parameter": "Device.X_GTK_GuestAccess.Rule.1.WEPKey",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "LKXAI3aeYvSfSo9G"
+  },
+  {
+    "Parameter": "Device.X_GTK_GuestAccess.Rule.1.KeyPassphrase",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:string",
+    "_id": "HCP3BHEzphLMZsxX"
+  },
+  {
+    "Parameter": "Device.X_GTK_GuestAccess.Rule.1.RekeyingInterval",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:unsignedInt",
+    "_id": "PsysmdjC1jt7icWO"
+  },
+  {
+    "Parameter": "Device.X_GTK_GuestAccess.Rule.1.GuestIsolation",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:boolean",
+    "_id": "jUFMlkvdq3qER3Qt"
+  },
+  {
+    "Parameter": "Device.X_GTK_VoIP.",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "drBT3ctoYYM4dFJL"
+  },
+  {
+    "Parameter": "Device.X_GTK_VoIP.X_GTK_TelephoneNumber",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "100",
+    "Value type": "xsd:unsignedInt",
+    "_id": "piQbBKhecGZHM3hb"
+  },
+  {
+    "Parameter": "Device.X_GTK_VoIP.X_GTK_RegistarAddress",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "10.20.55.13",
+    "Value type": "xsd:string",
+    "_id": "uPKj3AKsAAvqGHQ6"
+  },
+  {
+    "Parameter": "Device.X_GTK_VoIP.X_GTK_RegistarPort",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "5060",
+    "Value type": "xsd:unsignedInt",
+    "_id": "3jvF8ZvFk2qhikim"
+  },
+  {
+    "Parameter": "Device.X_GTK_VoIP.X_GTK_AuthenticationID",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "100",
+    "Value type": "xsd:unsignedInt",
+    "_id": "sWvMb7byHh7njyvv"
+  },
+  {
+    "Parameter": "Device.X_GTK_VoIP.X_GTK_Password",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Gemtek@123",
+    "Value type": "xsd:string",
+    "_id": "tx8PM2WrgY3NDoXm"
+  },
+  {
+    "Parameter": "Device.X_GTK_VoIP.X_GTK_SIPProxy",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0.0.0.0",
+    "Value type": "xsd:string",
+    "_id": "dF9OJCgx46GaUAyz"
+  },
+  {
+    "Parameter": "Device.X_GTK_VoIP.X_GTK_SIPProxyPort",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "5060",
+    "Value type": "xsd:unsignedInt",
+    "_id": "pOdoeWU8z2TzmOqh"
+  },
+  {
+    "Parameter": "Device.X_GTK_VoIP.X_GTK_OutboundProxy",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0.0.0.0",
+    "Value type": "xsd:string",
+    "_id": "4WQqMkL9fQC3FLls"
+  },
+  {
+    "Parameter": "Device.X_GTK_VoIP.X_GTK_OutboundProxyPort",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "5060",
+    "Value type": "xsd:unsignedInt",
+    "_id": "o5WO2yakgAvJV1MH"
+  },
+  {
+    "Parameter": "Device.X_GTK_VoIP.X_GTK_Interface",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "ANIO_wan8",
+    "Value type": "xsd:string",
+    "_id": "sJh3wCwlwp3m6ik1"
+  },
+  {
+    "Parameter": "Device.IP",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "xdycHShYgHhpDom4"
+  },
+  {
+    "Parameter": "Device.IP.InterfaceNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "3",
+    "Value type": "xsd:unsignedInt",
+    "_id": "3kMSHGowUKo9MbB8"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "UczIpAn3E5GYbJOs"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.Enable",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "TRUE",
+    "Value type": "xsd:boolean",
+    "_id": "0QRDsQ35dj2TQOtn"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Up",
+    "Value type": "xsd:string",
+    "_id": "29kJLVDhm7otTUiG"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.Alias",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "cpe-1",
+    "Value type": "xsd:string",
+    "_id": "5q6RDt3PE1eRP1NC"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "lan",
+    "Value type": "xsd:string",
+    "_id": "bYe8su2J2bxtR0wL"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.LowerLayers",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Device.Ethernet.Link.1",
+    "Value type": "xsd:string",
+    "_id": "WhltcHlM3he9JBa1"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.X_GTK_UpStream",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "neutral",
+    "Value type": "xsd:boolean",
+    "_id": "ZrYdnbuiA7TblQtb"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.X_GTK_DefaultGateway",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:boolean",
+    "_id": "ZQEmu8TPzQikymyC"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv4AddressNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:unsignedInt",
+    "_id": "rRkV6AqlCOJ6PADJ"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6AddressNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "2",
+    "Value type": "xsd:unsignedInt",
+    "_id": "yIzqKbiHHJDC7SAY"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.MaxMTUSize",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1500",
+    "Value type": "xsd:unsignedInt",
+    "_id": "lMu5ZIYswpSXh9YV"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv4Address.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "D9E770Aox9IGgciz"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv4Address.1.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "6aVhzQY3knpBujkT"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv4Address.1.Alias",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "cpe-1",
+    "Value type": "xsd:string",
+    "_id": "ScsteVW7vifuHPQQ"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv4Address.1.IPAddress",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "192.168.1.1",
+    "Value type": "xsd:string",
+    "_id": "kW44RoqfhPrBEH28"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv4Address.1.SubnetMask",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "255.255.255.0",
+    "Value type": "xsd:string",
+    "_id": "CIijwFTJ6niTiJdJ"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv4Address.1.AddressingType",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Static",
+    "Value type": "xsd:string",
+    "_id": "4RsGJDgJ1oMFxSKz"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv4Address.1.X_GTK_Description",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Static",
+    "Value type": "xsd:string",
+    "_id": "OIKgltJiRpOTtH9z"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv4Address.1.GatewayIPAddress",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "FZvM52dx8RttPHlo"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.1.",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "cVDEVAwccLKPoCem"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.1.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "X8Evwgdd5O1pSKZC"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.1.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Enabled",
+    "Value type": "xsd:string",
+    "_id": "H7btq6S0zQzEfJOM"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.1.IPAddressStatus",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Invalid",
+    "Value type": "xsd:string",
+    "_id": "ampkDYkIJ6y6P0bN"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.1.Alias",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "cpe-1",
+    "Value type": "xsd:string",
+    "_id": "yHjKvDa9daLe7kTu"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.1.IPAddress",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "fd00::1",
+    "Value type": "xsd:string",
+    "_id": "bKjn4p8Z2ej5LsqU"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.1.Origin",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "AutoConfigured",
+    "Value type": "xsd:string",
+    "_id": "Shui1IckfDAkrxRV"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.1.Prefix",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "fd00::1",
+    "Value type": "xsd:string",
+    "_id": "jJcweS8JJ31cPotE"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.1.PreferredLifetime",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "9999-12-31T23:59:59Z",
+    "Value type": "xsd:string",
+    "_id": "z8hcpdgw5mMIre1U"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.1.ValidLifetime",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "9999-12-31T23:59:59Z",
+    "Value type": "xsd:string",
+    "_id": "qio0iwzWXKXOXu5U"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.1.X_GTK_Description",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Static",
+    "Value type": "xsd:string",
+    "_id": "d7sp2zcEQHm3K5Ly"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.1.NextHop",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "m3lSkFZqRJRPVmJV"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.2.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "",
+    "_id": "LCnO9qtlv2s0uCff"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.2.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Enabled",
+    "Value type": "",
+    "_id": "oVf0Y6gcGVM3K6NO"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.2.IPAddressStatus",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Invalid",
+    "Value type": "",
+    "_id": "tZo9sJA0jjOpXeKK"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.2.Alias",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "cpe-2",
+    "Value type": "",
+    "_id": "uAjlnvO9AkiE0upQ"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.2.IPAddress",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "fe80::e0:92ff:fe00:141",
+    "Value type": "",
+    "_id": "wYWLnyb2TWo7RqiK"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.2.Origin",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "AutoConfigured",
+    "Value type": "",
+    "_id": "ODTy7NpCxXSHAg0W"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.2.Prefix",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "64",
+    "Value type": "",
+    "_id": "pXT7eY1hhWPtVYrU"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.2.PreferredLifetime",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "9999-12-31T23:59:59Z",
+    "Value type": "",
+    "_id": "kqI2BpOaieXlO7Me"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.2.ValidLifetime",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "9999-12-31T23:59:59Z",
+    "Value type": "",
+    "_id": "7fQwKMO7cKdhQRCO"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.2.NextHop",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "h7KUVClRnLzUh4LT"
+  },
+  {
+    "Parameter": "Device.IP.Interface.1.IPv6Address.2.X_GTK_Description",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "BOwHaWARvz1tM3TF"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPv6",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "ZGAELXObHY9WO2y2"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPv6.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "7wsuD0Cgg1287Alx"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPv6.ModesSupported",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Stateless Address Autoconfiguration,Stateless Address Autoconfig6",
+    "Value type": "xsd:string",
+    "_id": "hwWcssU1taO6AGXF"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPv6.LANMode",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Stateless Address Autoconfiguration + Stateless DHCPv6",
+    "Value type": "xsd:string",
+    "_id": "jizvUylcmyTjoS7H"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPv6.DNS",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "fd00::1",
+    "Value type": "xsd:string",
+    "_id": "LXtXKgDILdG056ss"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPv6.Domain",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "gemtek.com",
+    "Value type": "xsd:string",
+    "_id": "gMLeLjg9jQHcsH7u"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "U8RGtdJq77FtO8dK"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.TunnelNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:unsignedInt",
+    "_id": "kdC3q3xbk6hrc8wP"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "zUnegQq4qMPbN9oM"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.TunnelName",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "lFvSpogMCb3wRCJU"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.SharedKey",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Gemtek@123",
+    "Value type": "xsd:string",
+    "_id": "n6zCFg95gVBebv3u"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.SercurityPolicy",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "ikev1",
+    "Value type": "xsd:string",
+    "_id": "F1Wg14szCfWOZWYb"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.Interface",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "ANI0_wan8",
+    "Value type": "xsd:string",
+    "_id": "ZGET16vYCckddZ06"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.RemoteIP",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "10.46.172.65",
+    "Value type": "xsd:string",
+    "_id": "qruCqM0B2ly1HuZ4"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.RemoteSubnet",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "10.46.172.0/24",
+    "Value type": "xsd:string",
+    "_id": "gRSbVCj8ND6XaFfp"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.LocalSubnet",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "192.168.1.0/24",
+    "Value type": "xsd:string",
+    "_id": "CsorgJ4uAaoTFHsp"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.P1_EncryptionAligorithms",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "aes192",
+    "Value type": "xsd:string",
+    "_id": "wJ83AA9gQ7tRkQTe"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.P1_HashAligorithms",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "sha1",
+    "Value type": "xsd:string",
+    "_id": "g63LERCBBbxn9EvS"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.P1_DHGroup",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "modp1536",
+    "Value type": "xsd:string",
+    "_id": "yRrKNkOunx0IUDn9"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.P1_PrfAlg",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "loXJdpws0qw68JBY"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.P2_EncryptionAligorithms",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "aes128",
+    "Value type": "xsd:string",
+    "_id": "UznDCec5LezTByuI"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.P2_DHGroup",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "modp768",
+    "Value type": "xsd:string",
+    "_id": "gHMQrz3GEoxZMrAZ"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.P2_LifeTime",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "60",
+    "Value type": "xsd:string",
+    "_id": "8mKDqgEmxdM273ma"
+  },
+  {
+    "Parameter": "Device.X_GTK_IPSec.Tunnel.1.EnableESN",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:string",
+    "_id": "sgMcD5bGam0EGDoT"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "1cVi7fwbaY8EEfSc"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.InterfaceNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "97qhXMJvulNGxEcn"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "sprzFQiHOPho3BiT"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.1.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "up",
+    "Value type": "xsd:string",
+    "_id": "ckVobvMfwcbsjXjf"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.1.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "eth0_0",
+    "Value type": "xsd:string",
+    "_id": "AggJ4qe8lR99e3dX"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.1.MaxBitRate",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1000",
+    "Value type": "xsd:unsignedInt",
+    "_id": "vElpENGIDbtxhKth"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.1.DuplexMode",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "full",
+    "Value type": "xsd:string",
+    "_id": "RGovQsfh3IqAnFlU"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.2",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "KZTj1DEUO12AVGCM"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.2.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "down",
+    "Value type": "xsd:string",
+    "_id": "tO1lkiXbBw5zAp7k"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.2.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "eth1_0",
+    "Value type": "xsd:string",
+    "_id": "LSLUo4LNmwRXYFOy"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.2.MaxBitRate",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "10",
+    "Value type": "xsd:unsignedInt",
+    "_id": "MjH8F3eUhsuL2a5K"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.2.DuplexMode",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "half",
+    "Value type": "xsd:string",
+    "_id": "8r4fJYMJhZdmjyz5"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.3",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "9GUR0Xe3QXp0B77C"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.3.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "down",
+    "Value type": "xsd:string",
+    "_id": "xrtDfTu6nAgx1o2g"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.3.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "eth1_1",
+    "Value type": "xsd:string",
+    "_id": "yeADdaQm2XVni4rS"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.3.MaxBitRate",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "10",
+    "Value type": "xsd:unsignedInt",
+    "_id": "wMLCydSMCcFbQqto"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.3.DuplexMode",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "half",
+    "Value type": "xsd:string",
+    "_id": "E1gh78Nz3DegpXok"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.4",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "h51PQI4myMk37ifu"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.4.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "down",
+    "Value type": "xsd:string",
+    "_id": "njThGppqTwkVjlpK"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.4.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "eth1_2",
+    "Value type": "xsd:string",
+    "_id": "4ihUOlNzIy0UHwf4"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.4.MaxBitRate",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "10",
+    "Value type": "xsd:unsignedInt",
+    "_id": "7xhUm2Shc8AuR8fj"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.4.DuplexMode",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "half",
+    "Value type": "xsd:string",
+    "_id": "qGyAqLO6sxo3mcFa"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.5",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "2x0fpWtiRHtNoYoU"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.5.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "down",
+    "Value type": "xsd:string",
+    "_id": "NisO5hhU6KttSSyi"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.5.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "eth1_3",
+    "Value type": "xsd:string",
+    "_id": "EeDT4lKTLxbHNySK"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.5.MaxBitRate",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "10",
+    "Value type": "xsd:unsignedInt",
+    "_id": "h4i0wv4aJQf6ZIB6"
+  },
+  {
+    "Parameter": "Device.X_GTK_Ethernet.Interface.5.DuplexMode",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "half",
+    "Value type": "xsd:string",
+    "_id": "wR2biMg3NMMbi3zQ"
+  },
+  {
+    "Parameter": "Device.WiFi",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "o25blcoyzvFjaKTU"
+  },
+  {
+    "Parameter": "Device.WiFi.RadioNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:unsignedInt",
+    "_id": "ncQXgEIwKn4BxgVA"
+  },
+  {
+    "Parameter": "Device.WiFi.SSIDNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "3",
+    "Value type": "xsd:unsignedInt",
+    "_id": "fJUlAa4Rla83ymhA"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPointNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:unsignedInt",
+    "_id": "2Sgg88KUm4Rg74ar"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "gAbjBAGLIWOCyoZ2"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "wlan0.1",
+    "Value type": "xsd:string",
+    "_id": "wBnOOJJI2gvxMW1y"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.LowerLayers",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Device.WiFi.Radio.1",
+    "Value type": "xsd:string",
+    "_id": "K8wAEM1BXK1BNP21"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.SSID",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "test_ssid",
+    "Value type": "xsd:string",
+    "_id": "x1yLrtaVBT3hJmyO"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Alias",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "cpe-1",
+    "Value type": "xsd:string",
+    "_id": "S5WIXnmlFdjw0W6n"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.MACAddress",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "uZPkUNFTnnkwy1qa"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.X_LANTIQ_COM_Vendor_BridgeName",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "br-lan",
+    "Value type": "xsd:string",
+    "_id": "PTJmesf8kDu3myUI"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.X_LANTIQ_COM_Vendor_SsidType",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Radio",
+    "Value type": "xsd:string",
+    "_id": "Yq2EtkWnTsqjMYNf"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.X_LANTIQ_COM_Vendor_IsEndPoint",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:string",
+    "_id": "zFwV3vCT04RUqcnj"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "bs3oxYfkfPLmSYAB"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.BytesSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "XJ3NYhxiUXsKZwG5"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.BytesReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "fKshlIjQLN544ppq"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.PacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "JsazVO2XXxDhDhUJ"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.PacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "WLx9nFK2tz6gAF4y"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.RetransCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "eK2Fje3qul4xeHMx"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.ErrorsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "ux1knY7m1EN2x8kq"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.FailedRetransCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "a9WA0rzHtKy2fOJT"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.RetryCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "oCqBzBEgMZIfc6hc"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.MultipleRetryCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "memhCtHD48RGZGIB"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.ACKFailureCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "9U4LFRlJMDgMxrhq"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.ErrorsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "YzUG7qQptXh1yxcy"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.AggregatedPacketCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "pJSRCo8APTW9fEuR"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.UnicastPacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "wCsTGH9WwUcLzYJU"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.UnicastPacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "fCDYzwJoEdzeJ4wV"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.DiscardPacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "YcvRx2dlMGQ6gK9S"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.DiscardPacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "Robbjw6738WHo7oj"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.MulticastPacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "tquwkI1ttNU5nK6j"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.1.Stats.MulticastPacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "iTEeyZo48AiAFe8k"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "c8Bs3caMjXgGFxyM"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "wlan2.2",
+    "Value type": "xsd:string",
+    "_id": "fbZ6u7Bp0u30HUHw"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.LowerLayers",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Device.WiFi.Radio.2",
+    "Value type": "xsd:string",
+    "_id": "hxjZe0gxo7PBiu7g"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.SSID",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "LSDK_5G",
+    "Value type": "xsd:string",
+    "_id": "Qt4O5OrgEHMsmpbv"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.MACAddress",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "lJVtcg2eAvCrYjnl"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Alias",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "cpe-2",
+    "Value type": "xsd:string",
+    "_id": "jXMJWYZ24jSCOMUo"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.X_LANTIQ_COM_Vendor_BridgeName",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "br-lan",
+    "Value type": "xsd:string",
+    "_id": "AdCWnitJpOteY3Uq"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.X_LANTIQ_COM_Vendor_SsidType",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Radio",
+    "Value type": "xsd:string",
+    "_id": "pIuudwlZOrZ0jEky"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.X_LANTIQ_COM_Vendor_IsEndPoint",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:string",
+    "_id": "d28qQHFbqn41vjsY"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "eCQpkFjd1Ab5qvOL"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.BytesSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "ehSysJnI8kgVLmjN"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.BytesReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "AFpA3ddFrwnIDibf"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.PacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "EKIgDFfucZuO4jnO"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.PacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "x48WPFLGL191vUID"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.RetransCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "NRqAF01OapB8rxYq"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.ErrorsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "GQmZzksFkQXPjPpU"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.FailedRetransCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "vu9JJnYVk09YUUNC"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.RetryCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "ZEFZXgEV2dijBalE"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.MultipleRetryCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "cje8zPby6VpOPd5v"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.ACKFailureCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "w07neQMSr4l45UsS"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.ErrorsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "DHCPEvjEloU9B998"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.AggregatedPacketCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "uA6S3aq0fSX3q3gD"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.UnicastPacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "COJ2xVAC6zk8t8zI"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.UnicastPacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "nGaQRSt4hyZIlYte"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.DiscardPacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "YTQjMOKj0qWqjxjf"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.DiscardPacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "3q6wezxUjT6jRi60"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.MulticastPacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "IxIHju1zLWoOzqfS"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.2.Stats.MulticastPacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "hzyhlOAPF9vARxDJ"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "XYi4y01HW577Pe7c"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "wlan4.3",
+    "Value type": "xsd:string",
+    "_id": "0KApaqohO3qA0GAE"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.LowerLayers",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "qPyA8WgHr4fwCqqg"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.SSID",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "LSDK_6G",
+    "Value type": "xsd:string",
+    "_id": "wS0dgtIx7N8wWk77"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.MACAddress",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "BvbY3C0aCAPataCV"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Alias",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "cpe-3",
+    "Value type": "xsd:string",
+    "_id": "oyY3pkMnnaoF8gLc"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.X_LANTIQ_COM_Vendor_BridgeName",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "br-lan",
+    "Value type": "xsd:string",
+    "_id": "S7af1Xm4YxBI0OxY"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.X_LANTIQ_COM_Vendor_SsidType",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Radio",
+    "Value type": "xsd:string",
+    "_id": "zyzIBc4a2QlQOTaf"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.X_LANTIQ_COM_Vendor_IsEndPoint",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:string",
+    "_id": "vwDoN2759LcpeMry"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "3EZqntfvHb7sE0tx"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.BytesSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "syg0NkA7MW9fdUEP"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.BytesReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "Md0O5a9x5mLzBtFJ"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.PacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "LJ5hPGWiVBTphY44"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.PacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "IEdNMOOI5bkXmnYy"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.RetransCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "dfOJJybgm72Z1i9X"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.ErrorsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "PSahWy4luEIoUuMr"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.FailedRetransCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "VfW4rHLOQGp4jHTD"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.RetryCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "rq8fYg2POqPxxAXs"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.MultipleRetryCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "ruGTfECrUk0W6WXL"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.ACKFailureCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "0yd8ZJgswQHc7Q9b"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.ErrorsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "J4rq2xF0OqldH57C"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.AggregatedPacketCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "PSecb6knU6canIOR"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.UnicastPacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "iZ8IE0jBPbWQ1VG2"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.UnicastPacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "nlUoULM3SEyZzust"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.DiscardPacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "j01bcS0lBFWsDBAz"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.DiscardPacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "U57Rx8F9tLhpu3MN"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.MulticastPacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "gpgdJmujjNXVdmWI"
+  },
+  {
+    "Parameter": "Device.WiFi.SSID.3.Stats.MulticastPacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "iFSweNhe1UZI0bMv"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "KC1j0nvXIM1yHZE4"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.Alias",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "cpe-1",
+    "Value type": "xsd:string",
+    "_id": "5HxzbzAzrOgxGX4g"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "29uHSBInvtFr4kku"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Disabled",
+    "Value type": "xsd:string",
+    "_id": "GHbj7CaXhJGl3sto"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.SSIDReference",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Device.WiFi.SSID.1",
+    "Value type": "xsd:string",
+    "_id": "avyu9BcuS5xElSlI"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.SSIDAdvertisementEnabled",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "NX3lRIYV3AVOAopd"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.WMMCapability",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "3UqfGFaCLk0ihdMc"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.MACAddressControlEnabled",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "m3tm0kak7IWqYseF"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.UAPSDCapability",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "kEJUG0CI39OXypVW"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.MaxAssociatedDevices",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "32",
+    "Value type": "xsd:unsignedInt",
+    "_id": "UeeqpIFUjBbd2sZ4"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.IsolationEnable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:boolean",
+    "_id": "SaW2bvdXqoVv1peE"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.UAPSDEnable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "QLT0ydsYjincGJHV"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.AssociatedDeviceNumberOfEntries",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "2",
+    "Value type": "xsd:unsignedInt",
+    "_id": "SPeQg6lvXg4keULb"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.Security.ModesSupported",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "\"None WEP-64 WEP-128 WPA-Personal WPA2-Personal WPA-WPA2-Personal\"",
+    "Value type": "xsd:string",
+    "_id": "WpsgWWt3TaaOs18u"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.Security",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "uK5gX722WxOEcHjX"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.Security.ModeEnabled",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "WPA2-Personal",
+    "Value type": "xsd:string",
+    "_id": "zFGizDOVuodKhN4n"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.Security.WEPKey",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "GmPFbOEsZENCuW8n"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.Security.PreSharedKey",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "azY014q7ytYkvvFS"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.Security.KeyPassphrase",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "d0mGIyzZlIu0iIrb"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.Security.RekeyingInterval",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "3600",
+    "Value type": "xsd:unsignedInt",
+    "_id": "Ir10DxYIZv7oVAez"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.Security.SAEPassphrase",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "fdNoJMV2MeznTBKr"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.Security.RadiusServerIPAdrr",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "O5y6yfPoLV0fvu4i"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.Security.RadiusServerPort",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1812",
+    "Value type": "xsd:unsignedInt",
+    "_id": "5ZqheJ9pmICNJ2q9"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.Security.X_LANTIQ_COM_Vendor_SaePassword",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "\"WPA3-Personal WPA2-WPA3-Personal\"",
+    "Value type": "xsd:string",
+    "_id": "pcNMhpqwR5LXILTx"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.WPS",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "oHe1KrNbH1S6lC2h"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.WPS.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "D8ctSyKDlUnYlCiS"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.WPS.ConfigMethodsSupported",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "PNRF6oww5JD7SXWv"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.WPS.ConfigMethodsEnabled",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "x0Lf6kDaNh5xJVPE"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.WPS.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "qYWkRTUDVNURRJuw"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.X_GTK_Vendor.",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "5yIKcOrtquWavlcz"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.X_GTK_Vendor.WaveWDSMode",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Disabled",
+    "Value type": "xsd:string",
+    "_id": "zJubEpmgO1oADdkN"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.X_GTK_Vendor.WaveWDSPeers",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "qaRu0DiUCAgpKvLC"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.X_LANTIQ_COM_Vendor",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "qASOvHvEMM7xzaIc"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.X_LANTIQ_COM_Vendor.MACAddressControlMode",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Disabled",
+    "Value type": "xsd:string",
+    "_id": "Fgdx2onV2Fjfb0om"
+  },
+  {
+    "Parameter": "Device.WiFi.AccessPoint.1.X_LANTIQ_COM_Vendor.MACAddressControlList",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "NcCJKh3C8ncaKM8n"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "VitMyXp5Vtf5oJ9I"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Down",
+    "Value type": "xsd:string",
+    "_id": "AK1LeaYfs0UrpOhD"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Alias",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "cpe-1",
+    "Value type": "xsd:string",
+    "_id": "OGfp138II0YTFaKF"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.LowerLayers",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "a0tjv36LJ16mZKlY"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "radio0",
+    "Value type": "xsd:string",
+    "_id": "JpKAho996inLa8CP"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.MaxBitRate",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "300",
+    "Value type": "xsd:unsignedInt",
+    "_id": "OpDZBmwMk3VyDqj2"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "zKzgykTmbcPulsfD"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.OperatingFrequencyBand",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "2.4Ghz",
+    "Value type": "xsd:string",
+    "_id": "geSa9FjwFYOV3xbY"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.OperatingStandards",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "\"b, g, n, ax\"",
+    "Value type": "xsd:string",
+    "_id": "Xi5fWnDxlJnC4pp0"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.ExtensionChannel",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "PXumVuINttk6Cm0U"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.AutoChannelEnable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "MEfOSH0IGJaZ7n0k"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Channel",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "LzIihl6C8bOV43xT"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.OperatingChannelBandwidth",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "Auto",
+    "Value type": "xsd:string",
+    "_id": "xdKq21bOfkKO96r6"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.RegulatoryDomain",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "20MHz",
+    "Value type": "xsd:string",
+    "_id": "2WF9pqX3P9BCiJiO"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.DTIMPeriod",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "2",
+    "Value type": "xsd:unsignedInt",
+    "_id": "fwPnce2eNqD3vL4p"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.BeaconPeriod",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "100",
+    "Value type": "xsd:unsignedInt",
+    "_id": "SAcWacRiQOBuBImv"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.TransmitPower",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "100",
+    "Value type": "xsd:int",
+    "_id": "IpnGM3bqjfKBsXGL"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.CoexEnabled",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "PKswU0zwqFUqEBVn"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.SupportedFrequencyBands",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "wXHmLHrPtRiJiReb"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.X_GTK_Vendor.WPS.",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "wZonhHZAzDUudIs1"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.X_GTK_Vendor.WPS.PIN",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "gcX41QoKXPggNZCL"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Stats",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "IBYjokLgEsfvTNbB"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Stats.Noise",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "255",
+    "Value type": "xsd:unsignedInt",
+    "_id": "wJdIK4JLUqpQtOmN"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Stats.BytesSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "5sCv0EBRZl1D7O3d"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Stats.BytesReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "XD7E1m6WqEk53Q9x"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Stats.PacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "aWTVIbOMquG6UCBC"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Stats.PacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "RyssMGAkjMjpQFFz"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Stats.ErrorsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "wkInGhW9F05ZtbHJ"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Stats.ErrorsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "HumKHbbrAu1pCraa"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Stats.DiscardPacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "IW5Ns9E8mu5iR2W9"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Stats.DiscardPacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "z53cp2H5wKJkBtlm"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Stats.FCSErrorCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "P9OpCvVhlk7nVgyG"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "8CyLWrbToCzw5AQ9"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Status",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "Down",
+    "Value type": "xsd:string",
+    "_id": "Rrf8NcgLhZYxWJe4"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Alias",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "cpe-2",
+    "Value type": "xsd:string",
+    "_id": "WodKUSB76xOvzqEH"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.LowerLayers",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "byyn8XiH9hRLAHkW"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Name",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "radio2",
+    "Value type": "xsd:string",
+    "_id": "1wK3CbNWS2jyShSk"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.MaxBitRate",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "300",
+    "Value type": "xsd:unsignedInt",
+    "_id": "v6O6j70GUL2P1g9a"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Enable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "rds5fWNoaRipAyMK"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.OperatingFrequencyBand",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "5Ghz",
+    "Value type": "xsd:string",
+    "_id": "1sTlgHsOtj98pBpt"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.OperatingStandards",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "\"a, n, ac, ax\"",
+    "Value type": "xsd:string",
+    "_id": "jKmMdCqWIC1AjJ4B"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.ExtensionChannel",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "pHokGzyoQqhSw8An"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.AutoChannelEnable",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "tUxbV74BCtvs6DkK"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Channel",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "f0YNEcDOjFM3825f"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.OperatingChannelBandwidth",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "160MHz",
+    "Value type": "xsd:string",
+    "_id": "b0wNB4sQtj0riCo1"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.RegulatoryDomain",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "20MHz",
+    "Value type": "xsd:string",
+    "_id": "NtcDZsE4WsEmNkYE"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.DTIMPeriod",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "2",
+    "Value type": "xsd:unsignedInt",
+    "_id": "YrY9aSNavBTDGZ36"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.BeaconPeriod",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "100",
+    "Value type": "xsd:unsignedInt",
+    "_id": "rUytrGGStRdNsJxZ"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.TransmitPower",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "100",
+    "Value type": "xsd:int",
+    "_id": "DbZOkocnHcQtp5vN"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.CoexEnabled",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "1",
+    "Value type": "xsd:boolean",
+    "_id": "MGh4M10aiY53UwYd"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.SupportedFrequencyBands",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "q7kylgNacA6bM2Ka"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.X_GTK_Vendor.WPS.",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "tpoPRoxXJkRgL0WA"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.X_GTK_Vendor.WPS.PIN",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "wadJm5aI5up1UeS2"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Stats",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "xsd:string",
+    "_id": "5OeQYEknRwQnEE1c"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Stats.Noise",
+    "Object": "FALSE",
+    "Writable": "TRUE",
+    "Value": "",
+    "Value type": "",
+    "_id": "Xth5mYK1Bf48cmQV"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Stats.BytesSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "",
+    "Value type": "",
+    "_id": "4HDjDyoPPWpwmqMM"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Stats.BytesReceived",
+    "Object": "TRUE",
+    "Writable": "FALSE",
+    "Value": "255",
+    "Value type": "xsd:unsignedInt",
+    "_id": "Rk1dJK32CAvpqHCr"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Stats.PacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "fdf1m0DS7fI2oYKQ"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Stats.PacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "NM3kk8Sgp8HsWYdK"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Stats.ErrorsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "FKxsteIIYl0vELMl"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Stats.ErrorsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "f0uDeAIUayxv50D7"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Stats.DiscardPacketsSent",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "CBKPxD3A5Qn80w31"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Stats.DiscardPacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "NznnX4tekHuUyFlN"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.2.Stats.FCSErrorCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "P0FsFI6C3jVmF2It"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Stats.DiscardPacketsReceived",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "bOLoTMrJGL2GWkNN"
+  },
+  {
+    "Parameter": "Device.WiFi.Radio.1.Stats.FCSErrorCount",
+    "Object": "FALSE",
+    "Writable": "FALSE",
+    "Value": "0",
+    "Value type": "xsd:unsignedInt",
+    "_id": "n9h5HE6w5DQlljkW"
+  }
+]

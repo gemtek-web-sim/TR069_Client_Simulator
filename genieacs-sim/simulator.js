@@ -1,16 +1,21 @@
 "use strict";
 
 const net = require("net");
-const xmlParser = require("./xml-parser");
-const xmlUtils = require("./xml-utils");
+const xmlParser = require("../helper/xml-parser");
+const xmlUtils = require("../helper/xml-utils");
 const methods = require("./methods");
+
+// Custom
+const utils = require("../utils");
+
+let httpServer = null;
 
 const NAMESPACES = {
   "soap-enc": "http://schemas.xmlsoap.org/soap/encoding/",
   "soap-env": "http://schemas.xmlsoap.org/soap/envelope/",
-  "xsd": "http://www.w3.org/2001/XMLSchema",
-  "xsi": "http://www.w3.org/2001/XMLSchema-instance",
-  "cwmp": "urn:dslforum-org:cwmp-1-0"
+  xsd: "http://www.w3.org/2001/XMLSchema",
+  xsi: "http://www.w3.org/2001/XMLSchema-instance",
+  cwmp: "urn:dslforum-org:cwmp-1-0",
 };
 
 let nextInformTimeout = null;
@@ -21,20 +26,26 @@ let device = null;
 let httpAgent = null;
 let basicAuth;
 
-
 function createSoapDocument(id, body) {
   let headerNode = xmlUtils.node(
     "soap-env:Header",
     {},
-    xmlUtils.node("cwmp:ID", { "soap-env:mustUnderstand": 1 }, xmlParser.encodeEntities(id))
+    xmlUtils.node(
+      "cwmp:ID",
+      { "soap-env:mustUnderstand": 1 },
+      xmlParser.encodeEntities(id)
+    )
   );
 
   let bodyNode = xmlUtils.node("soap-env:Body", {}, body);
   let namespaces = {};
   for (let prefix in NAMESPACES)
     namespaces[`xmlns:${prefix}`] = NAMESPACES[prefix];
-  
-  let env = xmlUtils.node("soap-env:Envelope", namespaces, [headerNode, bodyNode]);
+
+  let env = xmlUtils.node("soap-env:Envelope", namespaces, [
+    headerNode,
+    bodyNode,
+  ]);
 
   return `<?xml version="1.0" encoding="UTF-8"?>\n${env}`;
 }
@@ -44,36 +55,35 @@ function sendRequest(xml, callback) {
   let body = xml || "";
 
   headers["Content-Length"] = body.length;
-  headers["Content-Type"] = "text/xml; charset=\"utf-8\"";
-  headers["Authorization"]= basicAuth;
+  headers["Content-Type"] = 'text/xml; charset="utf-8"';
+  headers["Authorization"] = basicAuth;
 
-  if (device._cookie)
-    headers["Cookie"] = device._cookie;
+  if (device._cookie) headers["Cookie"] = device._cookie;
 
   let options = {
     method: "POST",
     headers: headers,
-    agent: httpAgent
+    agent: httpAgent,
   };
 
   Object.assign(options, requestOptions);
 
-  let request = http.request(options, function(response) {
+  let request = http.request(options, function (response) {
     let chunks = [];
     let bytes = 0;
 
-    response.on("data", function(chunk) {
+    response.on("data", function (chunk) {
       chunks.push(chunk);
-      return bytes += chunk.length;
+      return (bytes += chunk.length);
     });
 
-    return response.on("end", function() {
+    return response.on("end", function () {
       let offset = 0;
       body = Buffer.allocUnsafe(bytes);
 
-      chunks.forEach(function(chunk) {
+      chunks.forEach(function (chunk) {
         chunk.copy(body, offset, 0, chunk.length);
-        return offset += chunk.length;
+        return (offset += chunk.length);
       });
 
       if (Math.floor(response.statusCode / 100) !== 2) {
@@ -84,8 +94,7 @@ function sendRequest(xml, callback) {
 
       if (+response.headers["Content-Length"] > 0 || body.length > 0)
         xml = xmlParser.parseXml(body.toString());
-      else
-        xml = null;
+      else xml = null;
 
       if (response.headers["set-cookie"])
         device._cookie = response.headers["set-cookie"];
@@ -94,7 +103,8 @@ function sendRequest(xml, callback) {
     });
   });
 
-  request.setTimeout(30000, function(err) {
+  request.setTimeout(30000, function (err) {
+    httpServer = null;
     throw new Error("Socket timed out");
   });
 
@@ -106,14 +116,13 @@ function startSession(event) {
   pendingInform = false;
   const requestId = Math.random().toString(36).slice(-8);
 
-  methods.inform(device, event, function(body) {
+  methods.inform(device, event, function (body) {
     let xml = createSoapDocument(requestId, body);
-    sendRequest(xml, function(xml) {
+    sendRequest(xml, function (xml) {
       cpeRequest();
     });
   });
 }
-
 
 function createFaultResponse(code, message) {
   let fault = xmlUtils.node(
@@ -121,24 +130,23 @@ function createFaultResponse(code, message) {
     {},
     xmlUtils.node("cwmp:Fault", {}, [
       xmlUtils.node("FaultCode", {}, code),
-      xmlUtils.node("FaultString", {}, xmlParser.encodeEntities(message))
+      xmlUtils.node("FaultString", {}, xmlParser.encodeEntities(message)),
     ])
   );
 
   let soapFault = xmlUtils.node("soap-env:Fault", {}, [
     xmlUtils.node("faultcode", {}, "Client"),
     xmlUtils.node("faultstring", {}, "CWMP fault"),
-    fault
+    fault,
   ]);
 
   return soapFault;
 }
 
-
 function cpeRequest() {
   const pending = methods.getPending();
   if (!pending) {
-    sendRequest(null, function(xml) {
+    sendRequest(null, function (xml) {
       handleMethod(xml);
     });
     return;
@@ -146,27 +154,37 @@ function cpeRequest() {
 
   const requestId = Math.random().toString(36).slice(-8);
 
-  pending(function(body, callback) {
+  pending(function (body, callback) {
     let xml = createSoapDocument(requestId, body);
-    sendRequest(xml, function(xml) {
+    sendRequest(xml, function (xml) {
       callback(xml, cpeRequest);
     });
   });
 }
-
 
 function handleMethod(xml) {
   if (!xml) {
     httpAgent.destroy();
     let informInterval = 10;
     if (device["Device.ManagementServer.PeriodicInformInterval"])
-      informInterval = parseInt(device["Device.ManagementServer.PeriodicInformInterval"][1]);
-    else if (device["InternetGatewayDevice.ManagementServer.PeriodicInformInterval"])
-      informInterval = parseInt(device["InternetGatewayDevice.ManagementServer.PeriodicInformInterval"][1]);
+      informInterval = parseInt(
+        device["Device.ManagementServer.PeriodicInformInterval"][1]
+      );
+    else if (
+      device["InternetGatewayDevice.ManagementServer.PeriodicInformInterval"]
+    )
+      informInterval = parseInt(
+        device[
+          "InternetGatewayDevice.ManagementServer.PeriodicInformInterval"
+        ][1]
+      );
 
-    nextInformTimeout = setTimeout(function() {
-      startSession();
-    }, pendingInform ? 0 : 1000 * informInterval);
+    nextInformTimeout = setTimeout(
+      function () {
+        startSession();
+      },
+      pendingInform ? 0 : 1000 * informInterval
+    );
 
     return;
   }
@@ -204,61 +222,84 @@ function handleMethod(xml) {
   if (!method) {
     let body = createFaultResponse(9000, "Method not supported");
     let xml = createSoapDocument(requestId, body);
-    sendRequest(xml, function(xml) {
+    sendRequest(xml, function (xml) {
       handleMethod(xml);
     });
     return;
   }
 
-  method(device, requestElement, function(body) {
+  method(device, requestElement, function (body) {
     let xml = createSoapDocument(requestId, body);
-    sendRequest(xml, function(xml) {
+    sendRequest(xml, function (xml) {
       handleMethod(xml);
     });
   });
 }
 
-function listenForConnectionRequests(serialNumber, acsUrlOptions, callback) {
-  let ip, port;
-  // Start a dummy socket to get the used local ip
-  let socket = net.createConnection({
-    port: acsUrlOptions.port,
-    host: acsUrlOptions.hostname,
-    family: 4
-  })
-  .on("error", callback)
-  .on("connect", () => {
-    ip = socket.address().address;
-    port = socket.address().port + 1;
-    socket.end();
-  })
-  .on("close", () => {
-    const connectionRequestUrl = `http://${ip}:${port}/`;
+function listenForConnectionRequests(serialNumber, acsUrlOptions) {
+  return new Promise((resolve, reject) => {
+    let ip = null;
+    let port = null;
+    // Start a dummy socket to get the used local ip
+    let socket = net
+      .createConnection({
+        port: acsUrlOptions.port,
+        host: acsUrlOptions.hostname,
+        family: 4,
+      })
+      .on("error", (err) => {
+        reject(`[ERROR] on error net.createConnection() fail, ${err}`);
+      })
+      .on("connect", () => {
+        ip = socket.address().address;
+        port = socket.address().port + 1;
+        socket.end();
+      })
+      .on("close", () => {
+        if ((ip !== null) & (port !== null)) {
+          const connectionRequestUrl = `http://${ip}:${port}/`;
 
-    const httpServer = http.createServer((_req, res) => {
-      console.log(`Simulator ${serialNumber} got connection request`);
-      res.end();
-        // A session is ongoing when nextInformTimeout === null
-        if (nextInformTimeout === null) pendingInform = true;
-        else {
-          clearTimeout(nextInformTimeout);
-          nextInformTimeout = setTimeout(function () {
-            startSession("6 CONNECTION REQUEST");
-          }, 0);
+          httpServer = http.createServer((_req, res) => {
+            console.log(`Simulator ${serialNumber} got connection request`);
+            res.end();
+            // A session is ongoing when nextInformTimeout === null
+            if (nextInformTimeout === null) pendingInform = true;
+            else {
+              clearTimeout(nextInformTimeout);
+              nextInformTimeout = setTimeout(function () {
+                startSession("6 CONNECTION REQUEST");
+              }, 0);
+            }
+          });
+
+          httpServer.listen(port, ip, (err) => {
+            if (err) {
+              reject(`[ERROR] httpServer.listen fail, ${err}`);
+            }
+            console.log(
+              `Simulator ${serialNumber} listening for connection requests on ${connectionRequestUrl}`
+            );
+            resolve(connectionRequestUrl);
+          });
+        } else {
+          reject(`[ERROR] Cannot esstablish connection`);
         }
-    });
-
-    httpServer.listen(port, ip, err => {
-      if (err) return callback(err);
-      console.log(
-        `Simulator ${serialNumber} listening for connection requests on ${connectionRequestUrl}`
-      );
-      return callback(null, connectionRequestUrl);
-    });
+      });
   });
 }
 
-function start(dataModel, serialNumber, acsUrl) {
+function start(dataModel, serialNumber, acsUrl, response_instance) {
+  console.log("\n=== genieacs-sim.simulator ===");
+  if (httpServer !== null) {
+    console.log("Already connect --> do nothing");
+    utils.sendResponseToFE(
+      response_instance,
+      200,
+      "Connection to ACS Server exists"
+    );
+    return;
+  }
+
   device = dataModel;
 
   if (device["DeviceID.SerialNumber"])
@@ -278,21 +319,51 @@ function start(dataModel, serialNumber, acsUrl) {
     password = device["InternetGatewayDevice.ManagementServer.Password"][1];
   }
 
-  basicAuth = "Basic " + Buffer.from(`${username}:${password}`).toString("base64");
+  basicAuth =
+    "Basic " + Buffer.from(`${username}:${password}`).toString("base64");
 
   requestOptions = require("url").parse(acsUrl);
   http = require(requestOptions.protocol.slice(0, -1));
-  httpAgent = new http.Agent({keepAlive: true, maxSockets: 1});
+  httpAgent = new http.Agent({ keepAlive: true, maxSockets: 1 });
 
-  listenForConnectionRequests(serialNumber, requestOptions, (err, connectionRequestUrl) => {
-    if (err) throw err;
-    if (device["InternetGatewayDevice.ManagementServer.ConnectionRequestURL"]) {
-      device["InternetGatewayDevice.ManagementServer.ConnectionRequestURL"][1] = connectionRequestUrl;
-    } else if (device["Device.ManagementServer.ConnectionRequestURL"]) {
-      device["Device.ManagementServer.ConnectionRequestURL"][1] = connectionRequestUrl;
-    }
-    startSession();
-  });
+  listenForConnectionRequests(serialNumber, requestOptions)
+    .then((connectionRequestUrl) => {
+      if (
+        device["InternetGatewayDevice.ManagementServer.ConnectionRequestURL"]
+      ) {
+        device[
+          "InternetGatewayDevice.ManagementServer.ConnectionRequestURL"
+        ][1] = connectionRequestUrl;
+      } else if (device["Device.ManagementServer.ConnectionRequestURL"]) {
+        device["Device.ManagementServer.ConnectionRequestURL"][1] =
+          connectionRequestUrl;
+      }
+      startSession();
+      utils.sendResponseToFE(
+        response_instance,
+        200,
+        "Connect to ACS Server Success"
+      );
+    })
+    .catch((err) => {
+      console.log(err);
+      utils.sendResponseToFE(response_instance, 500, err);
+    });
+}
+
+function end(response_instance) {
+  if (httpServer !== null) {
+    httpServer.close(() => {
+      console.log("Close connection");
+      httpServer = null;
+    });
+  }
+  utils.sendResponseToFE(
+    response_instance,
+    200,
+    "Close connection to ACS Server Success"
+  );
 }
 
 exports.start = start;
+exports.end = end;

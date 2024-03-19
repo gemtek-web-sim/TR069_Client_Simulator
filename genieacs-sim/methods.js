@@ -2,8 +2,8 @@
 
 const http = require("http");
 const https = require("https");
-const xmlParser = require("./xml-parser");
-const xmlUtils = require("./xml-utils");
+const xmlParser = require("../helper/xml-parser");
+const xmlUtils = require("../helper/xml-utils");
 
 const INFORM_PARAMS = [
   "Device.DeviceInfo.SpecVersion",

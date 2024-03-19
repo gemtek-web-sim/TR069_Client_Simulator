@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./startServer.sh",
-    "install": "npm install body-parser express path fs"
+    "install": "npm install body-parser express path fs nedb cluster"
   },
   "keywords": [
     "TR-069",
@@ -16,6 +16,8 @@
   "author": "Alfie_Bui",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.3"
+    "cluster": "^0.7.7",
+    "express": "^4.18.3",
+    "nedb": "^1.8.0"
   }
 }
