@@ -1,10 +1,14 @@
-# ignore test file
+# test file
 test/*
 test*
-
-# ignore log file
-log/*
 
 # package
 node_modules/*
 package-lock.json
+
+# Serial number
+database/SerialNumber.txt
+database/db_data_model*
+
+# log file
+log/*

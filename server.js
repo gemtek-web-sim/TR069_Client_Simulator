@@ -8,6 +8,7 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const neDB = require("nedb");
 const fs = require("fs");
+const cors = require("cors");
 
 // Custom module
 const utils = require("./utils.js");
@@ -29,6 +30,8 @@ const COMMAND = {
   USER_CONFIG_DATA: "USER_CONFIG_DATA", // get data  from               (FE -> BE & response back)
 };
 const DB_PATH = "./database/db_data_model.db";
+const SERIAL_NUMBER_PATH = "./database/SerialNumber.txt";
+const UNIQUE_SERIAL_NUMBER = "sim" + utils.genSerialNumber(0, 999999);
 
 /**
  * ==================================================
@@ -42,6 +45,7 @@ const app = express();
 // serve FrontEnd folder
 app.use(express.static(path.join(__dirname, "frontend")));
 app.use(bodyParser.json());
+app.use(cors());
 
 // listen req on [PORT]
 app.listen(PORT, () => {
@@ -50,9 +54,21 @@ app.listen(PORT, () => {
 });
 
 // init DB
-const db = new neDB({ filename: DB_PATH, autoload: true });
-if (utils.isFileEmpty("./database/db_data_model.db")) {
+try {
+  utils.createFile(DB_PATH);
+  const db = new neDB({ filename: DB_PATH, autoload: true });
   dbService.initDB(db);
+} catch (err) {
+  console.error("Init DB fail ", err);
+  return;
+}
+
+// init unique Serial Number
+try {
+  utils.setSerialNumber(UNIQUE_SERIAL_NUMBER, SERIAL_NUMBER_PATH);
+} catch (err) {
+  console.error("Serial Number creation fail ", err);
+  return;
 }
 
 /**
@@ -65,10 +81,15 @@ if (utils.isFileEmpty("./database/db_data_model.db")) {
  */
 app.post("/be_set", async (request, response) => {
   try {
+    // log request time
     console.log(`\n== Request at ${utils.getHumanReadableTime()}`);
     console.log("Receive data from WebUI ", request.body);
+
+    // update change to DB at first
     const inform = utils.mappingDataModel(request.body.page, request.body.data);
     await dbService.setValue(db, inform);
+
+    // do the command
     switch (request.body.command) {
       case COMMAND.CONNECT_ACS:
         // @TODO
@@ -80,7 +101,7 @@ app.post("/be_set", async (request, response) => {
               // get acs URL directly from Client request instead of read from DB
               const acsurl = request.body.data.ACSURL;
               const dataModel = utils.createDeviceDataToSendACSServer(docs);
-              const serialNumber = utils.genSerialNumber(0, 999999);
+              const serialNumber = utils.getSerialNumber(SERIAL_NUMBER_PATH);
               genieacsClient.start(dataModel, serialNumber, acsurl, response);
             } else genieacsClient.end(response);
           } catch (err) {
