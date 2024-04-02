@@ -31,7 +31,7 @@ const COMMAND = {
 };
 const DB_PATH = "./database/db_data_model.db";
 const SERIAL_NUMBER_PATH = "./database/SerialNumber.txt";
-const UNIQUE_SERIAL_NUMBER = "sim" + utils.genSerialNumber(0, 999999);
+const UNIQUE_SERIAL_NUMBER = utils.genSerialNumber(0, 999999);
 
 /**
  * ==================================================
@@ -54,10 +54,10 @@ app.listen(PORT, () => {
 });
 
 // init DB
+const db = new neDB({ filename: DB_PATH, autoload: true });
 try {
   utils.createFile(DB_PATH);
-  const db = new neDB({ filename: DB_PATH, autoload: true });
-  dbService.initDB(db);
+  if (utils.isFileEmpty(DB_PATH)) dbService.initDB(db);
 } catch (err) {
   console.error("Init DB fail ", err);
   return;
@@ -101,6 +101,7 @@ app.post("/be_set", async (request, response) => {
               // get acs URL directly from Client request instead of read from DB
               const acsurl = request.body.data.ACSURL;
               const dataModel = utils.createDeviceDataToSendACSServer(docs);
+              fs.writeFileSync("dataModel.json", JSON.stringify(dataModel));
               const serialNumber = utils.getSerialNumber(SERIAL_NUMBER_PATH);
               genieacsClient.start(dataModel, serialNumber, acsurl, response);
             } else genieacsClient.end(response);
@@ -127,7 +128,7 @@ app.post("/be_set", async (request, response) => {
     }
   } catch (error) {
     // if encouter any error --> response HTPP Code 500: Internal Server Error
-    utils.sendResponseToFE(response, 500, err);
+    utils.sendResponseToFE(response, 500, error);
   }
 });
 

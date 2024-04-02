@@ -305,6 +305,7 @@ function start(dataModel, serialNumber, acsUrl, response_instance) {
   if (device["DeviceID.SerialNumber"])
     device["DeviceID.SerialNumber"][1] = serialNumber;
   if (device["Device.DeviceInfo.SerialNumber"])
+    // TR069
     device["Device.DeviceInfo.SerialNumber"][1] = serialNumber;
   if (device["InternetGatewayDevice.DeviceInfo.SerialNumber"])
     device["InternetGatewayDevice.DeviceInfo.SerialNumber"][1] = serialNumber;

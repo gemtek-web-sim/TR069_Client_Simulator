@@ -182,8 +182,13 @@ function getSerialNumber(file_path) {
  */
 function sendResponseToFE(response_instance, status_code, content) {
   // catch error inside callback
-  console.log(`>>> Response: `, content);
-  response_instance.status(status_code).send({ content: content.toString() });
+  try {
+    console.log(`\n=== utils.sendResponseToFE() ===\n`, content);
+    console.log(`\n>>>>>${getHumanReadableTime()} Response: `, content);
+    response_instance.status(status_code).send({ content: content.toString() });
+  } catch (err) {
+    throw `[Error] utils.sendResponseToFE fail, ${err}`;
+  }
 }
 
 /**
@@ -222,6 +227,11 @@ function isFileEmpty(filePath) {
   }
 }
 
+/**
+ * @brief Create file if it not yet exist, else do nothing
+ * @param {*} file_path
+ * @returns
+ */
 function createFile(file_path) {
   return new Promise((resolve, reject) => {
     if (isFileExist(file_path) === false) {

@@ -1,4 +1,5 @@
 Parameter,Object,Writable,Value,Value type
+Device,true,false,,
 Device.DeviceInfo,true,false,,
 Device.DeviceInfo.Manufacturer,false,false,Gemtek,xsd:string
 Device.DeviceInfo.ManufacturerOUI,false,false,000000,xsd:string
