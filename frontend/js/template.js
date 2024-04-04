@@ -5,7 +5,7 @@
  */
 
 const SIMULATOR_VERSION =
-  "GemtekWeb_v01_15Mar24"; /* Release version and tag tracking */
+  "GemtekACSClient_t01_04Apr24"; /* Release version and tag tracking */
   
 /**
  *
@@ -347,7 +347,7 @@ const template = {
   },
   Account: {
     UserName: "admin",
-    Password: "Gemtek@SimulateDemo886+84!",
+    Password: "admin",
   },
 };
 
