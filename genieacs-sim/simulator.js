@@ -66,6 +66,10 @@ function sendRequest(xml, callback) {
     agent: httpAgent,
   };
 
+  // console.log("\nAlfie_Bui === Send req with options:");
+  // console.log(options);
+  // console.log("---\n");
+
   Object.assign(options, requestOptions);
 
   let request = http.request(options, function (response) {
@@ -78,6 +82,7 @@ function sendRequest(xml, callback) {
     });
 
     return response.on("end", function () {
+      // console.log("Response from server___", response);
       let offset = 0;
       body = Buffer.allocUnsafe(bytes);
 
@@ -116,12 +121,8 @@ function startSession(event) {
   pendingInform = false;
   const requestId = Math.random().toString(36).slice(-8);
 
-  methods.inform(device, event, function (body) {
-    let xml = createSoapDocument(requestId, body);
-    sendRequest(xml, function (xml) {
-      cpeRequest();
-    });
-  });
+  console.log("Send inform to ACS Server, event, ", event);
+  sendInform(requestId, event);
 }
 
 function createFaultResponse(code, message) {
@@ -257,10 +258,15 @@ function listenForConnectionRequests(serialNumber, acsUrlOptions) {
       })
       .on("close", () => {
         if ((ip !== null) & (port !== null)) {
-          const connectionRequestUrl = `http://${ip}:${port}/`;
+          let connectionRequestUrl;
+          if (acsUrlOptions.protocol == "http:")
+            connectionRequestUrl = `http://${ip}:${port}/`; // For HTTP
+          else if (acsUrlOptions.protocol == "https:")
+            connectionRequestUrl = `https://${ip}:${port}/`; // For HTTPS
 
           httpServer = http.createServer((_req, res) => {
             console.log(`Simulator ${serialNumber} got connection request`);
+            // console.log("Incoming request from ACS server: ", _req);
             res.end();
             // A session is ongoing when nextInformTimeout === null
             if (nextInformTimeout === null) pendingInform = true;
@@ -325,7 +331,11 @@ function start(dataModel, serialNumber, acsUrl, response_instance) {
 
   requestOptions = require("url").parse(acsUrl);
   http = require(requestOptions.protocol.slice(0, -1));
-  httpAgent = new http.Agent({ keepAlive: true, maxSockets: 1 });
+  httpAgent = new http.Agent({
+    keepAlive: true,
+    maxSockets: 1,
+    rejectUnauthorized: false, // Bypass SSL certificate validation
+  });
 
   listenForConnectionRequests(serialNumber, requestOptions)
     .then((connectionRequestUrl) => {
@@ -366,5 +376,26 @@ function end(response_instance) {
   );
 }
 
+function sendInform(requestId, event) {
+  console.log("\n`=== genieacs-sim.simulator.sendInform() ===");
+  return new Promise((resolve, reject) => {
+    if (httpServer == null) {
+      console.log("Send Inform status: Not yet connect to ACS Server");
+      reject(
+        "Not yet connect to ACS Server. Please Enable CWMP and Apply to connect to ACS Server"
+      );
+    }
+
+    methods.inform(device, event, function (body) {
+      let xml = createSoapDocument(requestId, body);
+      sendRequest(xml, function (xml) {
+        cpeRequest();
+        resolve();
+      });
+    });
+  });
+}
+
 exports.start = start;
 exports.end = end;
+exports.sendInform = sendInform;

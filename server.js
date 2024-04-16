@@ -6,7 +6,6 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
-const neDB = require("nedb");
 const fs = require("fs");
 const cors = require("cors");
 
@@ -29,7 +28,6 @@ const COMMAND = {
   SEND_INFORM: "SEND_INFORM", // send inform actively         (FE -> BE, POST)
   USER_CONFIG_DATA: "USER_CONFIG_DATA", // get data  from               (FE -> BE & response back)
 };
-const DB_PATH = "./database/db_data_model.db";
 const SERIAL_NUMBER_PATH = "./database/SerialNumber.txt";
 const UNIQUE_SERIAL_NUMBER = utils.genSerialNumber(0, 999999);
 
@@ -54,14 +52,8 @@ app.listen(PORT, () => {
 });
 
 // init DB
-const db = new neDB({ filename: DB_PATH, autoload: true });
-try {
-  utils.createFile(DB_PATH);
-  if (utils.isFileEmpty(DB_PATH)) dbService.initDB(db);
-} catch (err) {
-  console.error("Init DB fail ", err);
-  return;
-}
+dbService.createDBinstance();
+dbService.initDB();
 
 // init unique Serial Number
 try {
@@ -87,13 +79,12 @@ app.post("/be_set", async (request, response) => {
 
     // update change to DB at first
     const inform = utils.mappingDataModel(request.body.page, request.body.data);
-    await dbService.setValue(db, inform);
+    await dbService.setValue(inform);
 
     // do the command
     switch (request.body.command) {
       case COMMAND.CONNECT_ACS:
-        // @TODO
-        db.find({}, function (err, docs) {
+        dbService.getValue({}, function (err, docs) {
           try {
             if (err) throw `[ERROR] db.find fail, ${err}`;
             // start connection
@@ -110,9 +101,20 @@ app.post("/be_set", async (request, response) => {
             utils.sendResponseToFE(response, 500, err);
           }
         });
+
         break;
       case COMMAND.SEND_INFORM:
-        // @TODO
+        const requestId = Math.random().toString(36).slice(-8);
+        console.log("\n\n === Send Inform actively ===");
+        console.log(`Timestamp at send inform: ${utils.getHumanReadableTime()}`);
+        genieacsClient
+          .sendInform(requestId)
+          .then(() => {
+            utils.sendResponseToFE(response, 200, "OK");
+          })
+          .catch((errText) => {
+            utils.sendResponseToFE(response, 500, errText);
+          });
         break;
       case COMMAND.USER_CONFIG_DATA:
         console.log("CONFIG DATA ==========");

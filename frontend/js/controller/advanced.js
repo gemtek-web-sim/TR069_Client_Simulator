@@ -246,6 +246,36 @@ function loadPage(page, options) {
       initEvent();
       fillData();
 
+      // Send Inform actively
+      document.getElementById("SendInform").addEventListener("click", () => {
+        if (checkError_show(document.querySelectorAll(".error"))) {
+          Advanced.DeviceManagement.EnaCWMP = enaCWMP.checked;
+          Advanced.DeviceManagement.LocalWANInterface =
+            localWANInterfaceSelect.value;
+          Advanced.DeviceManagement.ACSURL = acsUrl.value;
+          Advanced.DeviceManagement.ACSUsername = acsUsername.value;
+          Advanced.DeviceManagement.ACSPassword = acsPassword.value;
+          Advanced.DeviceManagement.ConnectionReqUsername =
+            connectionReqUsername.value;
+          Advanced.DeviceManagement.ConnectionReqPasword =
+            connectionReqPwd.value;
+          Advanced.DeviceManagement.EnaPerodic = enaPerodic.checked;
+          Advanced.DeviceManagement.PerodicInterval = perocdicInterval.value;
+
+          // create body for post request
+          var cloneData = Object.assign({}, Advanced.DeviceManagement);
+          cloneData.LocalWANInterface =
+            Basic.WAN.Interfaces[parseInt(cloneData.LocalWANInterface)].Name; // mapping value with actual Interface
+          // connect ACS server
+          httpService.send_POST_Request(
+            page,
+            COMMAND.SEND_INFORM,
+            cloneData,
+            Advanced
+          );
+        }
+      });
+
       // Apply and Cancel button
       document.getElementById("Modify").addEventListener("click", () => {
         if (checkError_show(document.querySelectorAll(".error"))) {
@@ -262,9 +292,10 @@ function loadPage(page, options) {
           Advanced.DeviceManagement.EnaPerodic = enaPerodic.checked;
           Advanced.DeviceManagement.PerodicInterval = perocdicInterval.value;
 
+          // create body for post request
           var cloneData = Object.assign({}, Advanced.DeviceManagement);
           cloneData.LocalWANInterface =
-            Basic.WAN.Interfaces[parseInt(cloneData.LocalWANInterface)].Name;
+            Basic.WAN.Interfaces[parseInt(cloneData.LocalWANInterface)].Name; // mapping value with actual Interface
           // connect ACS server
           httpService.send_POST_Request(
             page,

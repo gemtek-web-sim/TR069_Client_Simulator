@@ -6,34 +6,55 @@
 const csvParser = require("./helper/csv-parser");
 const fs = require("fs");
 const path = require("path");
+const neDB = require("nedb");
+const utils = require("./utils.js");
+
+// init DB
+let db = undefined;
 
 /**
  * Decalration const
  */
 const DATA_MODEL_SOURCE = "./database/Data_Model_Gemtek.csv";
+const DB_PATH = "./database/db_data_model.db";
+
+/**
+ * @brief init DB if it has not yet created, should invoke it at first from server.js
+ */
+function createDBinstance() {
+  if (db === undefined) db = new neDB({ filename: DB_PATH, autoload: true });
+}
+
+/**
+ * @brief return DB instance
+ * @returns getDBinstance() instance
+ */
+function getDBinstance() {
+  if (db === undefined) db = new neDB({ filename: DB_PATH, autoload: true });
+  return db;
+}
 
 /**
  * @brief return Promise for set one value
- * @param {*} db
- * @param {*} objectData
  */
-function setOneValue(db, key, value) {
+function setOneValue(key, value) {
   return new Promise((resolve, reject) => {
     try {
       // console.log("\n === dbService.setOneValue() ===");
-      // console.log(db);
+      // console.log(getDBinstance());
       // console.log(objectData);
 
-      db.findOne({ Parameter: key }, function (err, docs) {
+      getDBinstance().findOne({ Parameter: key }, function (err, docs) {
         // console.log(docs);
-        if (err) reject(`[ERROR] db.findOne() fail, ${err}`);
+        if (err) reject(`[ERROR] getDBinstance().findOne() fail, ${err}`);
         if (docs["Value"] != value) {
-          db.update(
+          getDBinstance().update(
             { _id: docs["_id"] },
             { $set: { Value: value } },
             {},
             function (error, numReplaced) {
-              if (error) reject(`[ERROR] db.update() fail, ${error}`);
+              if (error)
+                reject(`[ERROR] getDBinstance().update() fail, ${error}`);
 
               resolve();
             }
@@ -49,15 +70,14 @@ function setOneValue(db, key, value) {
 
 /**
  * @brief Set value to DB
- * @param {*} db          : database instance
  * @param {*} objectData  : data want to change
  * @returns
  */
-function setValue(db, objectData) {
+function setValue(objectData) {
   return new Promise(async (resolve, reject) => {
     try {
       console.log("\n === dbService.setValue() ===");
-      // console.log(db);
+      // console.log(getDBinstance());
       // console.log(objectData);
 
       if (typeof objectData !== "object")
@@ -65,7 +85,7 @@ function setValue(db, objectData) {
 
       // to DB
       for (const [key, value] of Object.entries(objectData)) {
-        await setOneValue(db, key, value);
+        await setOneValue(key, value);
       }
       resolve();
     } catch (err) {
@@ -74,32 +94,41 @@ function setValue(db, objectData) {
   });
 }
 
-// @TODO
-function getValue(key) {
-  return value;
+/**
+ *
+ * @param {*} filter: check https://github.com/louischatriot/nedb
+ * @param {*} callback
+ */
+function getValue(filter, callback) {
+  getDBinstance().find(filter, function (err, docs) {
+    callback(err, docs);
+  });
 }
 
 /**
- * @brief Init DB if the .db empty
- * @param {*} db : database instance
+ * @brief Init DB if the getDBinstance() empty
  * @returns
  */
-function initDB(db) {
+function initDB() {
   return new Promise((resolve, reject) => {
     try {
-      console.log("\n=== dbService.initDB ===");
-      // console.log(db);
+      utils.createFile(DB_PATH); // already check file exist
 
-      // read csv file then write it to DB
-      const data = fs.readFileSync(DATA_MODEL_SOURCE);
-      if (path.parse(DATA_MODEL_SOURCE).ext.toLowerCase() === ".csv") {
-        const rows = csvParser.reduce(csvParser.parseCsv(data.toString()));
-        // Insert new DB
-        db.insert(rows, function (err, newDocs) {
-          if (err) reject(`[Error] db.insert() fail, ${err}`);
-          console.log("Make new Database -- Insert success");
-          resolve();
-        });
+      if (utils.isFileEmpty(DB_PATH)) {
+        console.log("\n=== dbService.initDB ===");
+        // console.log(getDBinstance());
+
+        // read csv file then write it to DB
+        const data = fs.readFileSync(DATA_MODEL_SOURCE);
+        if (path.parse(DATA_MODEL_SOURCE).ext.toLowerCase() === ".csv") {
+          const rows = csvParser.reduce(csvParser.parseCsv(data.toString()));
+          // Insert new DB
+          getDBinstance().insert(rows, function (err, newDocs) {
+            if (err) reject(`[Error] getDBinstance().insert() fail, ${err}`);
+            console.log("Make new Database -- Insert success");
+            resolve();
+          });
+        }
       }
     } catch (err) {
       reject(`[Error] dbService.initDB() fail, ${err}`);
@@ -107,4 +136,10 @@ function initDB(db) {
   });
 }
 
-module.exports = { setValue, getValue, initDB };
+module.exports = {
+  setValue,
+  getValue,
+  initDB,
+  getDBinstance,
+  createDBinstance,
+};

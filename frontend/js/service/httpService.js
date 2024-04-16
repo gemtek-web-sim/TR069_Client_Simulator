@@ -40,6 +40,8 @@ const httpService = {
           ajaxLoaderSection.style.display = "none";
         } else {
           console.error("[ERROR] ", response.statusText);
+          ajaxLoaderSection.style.display = "none";
+          alert(`Server response: ${response.status} - ${response.statusText}`);
         }
       });
     } catch (err) {
