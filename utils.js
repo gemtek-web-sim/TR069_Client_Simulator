@@ -25,7 +25,6 @@ const { resolve } = require("path");
  */
 function getHumanReadableTime() {
   try {
-    console.log("\n=== utils.getHumanReadableTime() ===");
     // Get the current timestamp
     var currentDate = new Date();
 

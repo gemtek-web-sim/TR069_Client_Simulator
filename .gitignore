@@ -1,6 +1,7 @@
 # test file
 test/*
 test*
+dataModel.json
 
 # package
 node_modules/*
@@ -12,3 +13,6 @@ database/db_data_model*
 
 # log file
 log/*
+
+#ca-cert file
+genieacs-sim/ca-cert.pem

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# export NODE_EXTRA_CA_CERTS=genieacs-sim/ca-cert.pem
+# npm install
+
 # To English
 LC_TIME=en_US.UTF-8
 
