@@ -1,7 +1,13 @@
 #!/bin/bash
 
-# export NODE_EXTRA_CA_CERTS=genieacs-sim/ca-cert.pem
-# npm install
+if [ -e genieacs-sim/ca-cert.pem ]
+then
+    echo "ca-cert.pem exist, run with NODE_EXTRA_CA_CERTS"
+    export NODE_EXTRA_CA_CERTS=genieacs-sim/ca-cert.pem
+    npm install
+else
+    echo "ca-cert.pem doesn't exist, only support HTTP"
+fi
 
 # To English
 LC_TIME=en_US.UTF-8
