@@ -8,8 +8,6 @@ const methods = require("./methods");
 // Custom
 const utils = require("../utils");
 
-let httpServer = null;
-
 const NAMESPACES = {
   "soap-enc": "http://schemas.xmlsoap.org/soap/encoding/",
   "soap-env": "http://schemas.xmlsoap.org/soap/envelope/",
@@ -25,6 +23,21 @@ let requestOptions = null;
 let device = null;
 let httpAgent = null;
 let basicAuth;
+let request = null;
+let httpServer = null;
+
+function resetGlobal() {
+  nextInformTimeout = null;
+  pendingInform = false;
+  http = null;
+  requestOptions = null;
+  device = null;
+  httpAgent = null;
+  basicAuth;
+  request = null;
+  httpServer = null;
+}
+resetGlobal();
 
 function createSoapDocument(id, body) {
   let headerNode = xmlUtils.node(
@@ -51,78 +64,93 @@ function createSoapDocument(id, body) {
 }
 
 function sendRequest(xml, callback) {
-  let headers = {};
-  let body = xml || "";
+  try {
+    let headers = {};
+    let body = xml || "";
 
-  headers["Content-Length"] = body.length;
-  headers["Content-Type"] = 'text/xml; charset="utf-8"';
-  headers["Authorization"] = basicAuth;
+    headers["Content-Length"] = body.length;
+    headers["Content-Type"] = 'text/xml; charset="utf-8"';
+    headers["Authorization"] = basicAuth;
 
-  if (device._cookie) headers["Cookie"] = device._cookie;
+    if (device._cookie) headers["Cookie"] = device._cookie;
 
-  let options = {
-    method: "POST",
-    headers: headers,
-    agent: httpAgent,
-  };
+    let options = {
+      method: "POST",
+      headers: headers,
+      agent: httpAgent,
+    };
 
-  // console.log("\nAlfie_Bui === Send req with options:");
-  // console.log(options);
-  // console.log("---\n");
+    // console.log("\nAlfie_Bui === Send req with options:");
+    // console.log(options);
+    // console.log("---\n");
 
-  Object.assign(options, requestOptions);
+    Object.assign(options, requestOptions);
 
-  let request = http.request(options, function (response) {
-    let chunks = [];
-    let bytes = 0;
+    request = http.request(options, function (response) {
+      let chunks = [];
+      let bytes = 0;
 
-    response.on("data", function (chunk) {
-      chunks.push(chunk);
-      return (bytes += chunk.length);
-    });
-
-    return response.on("end", function () {
-      // console.log("Response from server___", response);
-      let offset = 0;
-      body = Buffer.allocUnsafe(bytes);
-
-      chunks.forEach(function (chunk) {
-        chunk.copy(body, offset, 0, chunk.length);
-        return (offset += chunk.length);
+      response.on("data", function (chunk) {
+        chunks.push(chunk);
+        return (bytes += chunk.length);
       });
 
-      if (Math.floor(response.statusCode / 100) !== 2) {
-        throw new Error(
-          `Unexpected response Code ${response.statusCode}: ${body}`
-        );
-      }
+      return response.on("end", function () {
+        // console.log("Response from server___", response);
+        let offset = 0;
+        body = Buffer.allocUnsafe(bytes);
 
-      if (+response.headers["Content-Length"] > 0 || body.length > 0)
-        xml = xmlParser.parseXml(body.toString());
-      else xml = null;
+        chunks.forEach(function (chunk) {
+          chunk.copy(body, offset, 0, chunk.length);
+          return (offset += chunk.length);
+        });
 
-      if (response.headers["set-cookie"])
-        device._cookie = response.headers["set-cookie"];
+        if (Math.floor(response.statusCode / 100) !== 2) {
+          throw new Error(
+            `Unexpected response Code ${response.statusCode}: ${body}`
+          );
+        }
 
-      return callback(xml);
+        if (+response.headers["Content-Length"] > 0 || body.length > 0)
+          xml = xmlParser.parseXml(body.toString());
+        else xml = null;
+
+        if (response.headers["set-cookie"])
+          device._cookie = response.headers["set-cookie"];
+
+        return callback(xml);
+      });
     });
-  });
 
-  request.setTimeout(30000, function (err) {
-    httpServer = null;
-    throw new Error("Socket timed out");
-  });
+    request.on("error", function (err) {
+      resetGlobal(); // clear current session
+      console.error("Request error:", err);
+      callback("Error");
+    });
 
-  return request.end(body);
+    request.setTimeout(30000, function (err) {
+      resetGlobal();
+      console.log("\nxxxxxxxxxx Close Socket xxxxxxxxxx\n\n");
+      // throw new Error("Socket timed out");
+    });
+    return request.end(body);
+  } catch (err) {
+    console.error("Catch error at sendReq: ", err);
+    callback("Error");
+  }
 }
 
 function startSession(event) {
-  nextInformTimeout = null;
-  pendingInform = false;
-  const requestId = Math.random().toString(36).slice(-8);
+  try {
+    nextInformTimeout = null;
+    pendingInform = false;
+    const requestId = Math.random().toString(36).slice(-8);
 
-  console.log("Send inform to ACS Server, event, ", event);
-  sendInform(requestId, event);
+    console.log("Send inform to ACS Server, event, ", event);
+    sendInform(requestId, event);
+  } catch (error) {
+    console.error("startSession --> sendInform error: ", error);
+  }
 }
 
 function createFaultResponse(code, message) {
@@ -357,7 +385,7 @@ function start(dataModel, serialNumber, acsUrl, response_instance) {
       );
     })
     .catch((err) => {
-      console.log(err);
+      console.error("Catch an error at listenForConnectionRequests: ", err);
       utils.sendResponseToFE(response_instance, 500, err);
     });
 }
@@ -366,7 +394,7 @@ function end(response_instance) {
   if (httpServer !== null) {
     httpServer.close(() => {
       console.log("Close connection");
-      httpServer = null;
+      resetGlobal();
     });
   }
   utils.sendResponseToFE(
@@ -377,20 +405,22 @@ function end(response_instance) {
 }
 
 function sendInform(requestId, event) {
-  console.log("\n`=== genieacs-sim.simulator.sendInform() ===");
   return new Promise((resolve, reject) => {
+    console.log("\n`=== genieacs-sim.simulator.sendInform() ===");
     if (httpServer == null) {
-      console.log("Send Inform status: Not yet connect to ACS Server");
-      reject(
-        "Not yet connect to ACS Server. Please Enable CWMP and Apply to connect to ACS Server"
-      );
+      console.error("Send Inform status: Can not send Inform to ACS Server");
+      reject("Send Inform status: Can not send Inform to ACS Server");
     }
 
     methods.inform(device, event, function (body) {
       let xml = createSoapDocument(requestId, body);
       sendRequest(xml, function (xml) {
-        cpeRequest();
-        resolve();
+        if (xml === "Error") {
+          reject("Send Inform status: Can not send Inform to ACS Server");
+        } else {
+          cpeRequest();
+          resolve("Send Inform status: SUCCESS");
+        }
       });
     });
   });

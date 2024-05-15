@@ -15,4 +15,4 @@ database/db_data_model*
 log/*
 
 #ca-cert file
-genieacs-sim/ca-cert.pem
+# genieacs-sim/ca-cert.pem
