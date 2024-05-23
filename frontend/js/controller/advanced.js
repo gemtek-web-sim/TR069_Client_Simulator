@@ -383,7 +383,15 @@ function loadPage(page, options) {
         if (checkError_show(ipError)) {
           Advanced.DMZ.EnableDMZ = enaDMZ.checked;
           Advanced.DMZ.IPAddr = ipAddr.value;
-          applyThenStoreToLS("advanced-dmz.html", "Apply", Advanced);
+          var cloneData = deepCopyObject(Advanced.DMZ);
+          console.log(cloneData);
+          httpService.send_POST_Request(
+            page,
+            COMMAND.USER_CONFIG_DATA.MODIFY,
+            cloneData,
+            Advanced,
+            ""
+          );
         } else {
           console.log("Apply fail");
         }

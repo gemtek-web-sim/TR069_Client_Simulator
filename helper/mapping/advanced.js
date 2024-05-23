@@ -39,6 +39,10 @@ function mapping(command, page, lsData, subOption) {
       };
       break;
     case "advanced-dmz.html":
+      returnVal = {
+        "Device.NAT.X_GTK_DMZ.Enable": ["false", "true", lsData.EnableDMZ.toString(), "xsd:boolean"],
+        "Device.NAT.X_GTK_DMZ.IPAddress": ["false", "true", lsData.IPAddr, "xsd::string"],
+      };
       break;
     case "advanced-multicast-ipv4Setting.html":
       break;
