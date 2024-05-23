@@ -909,6 +909,7 @@ function loadPage(page, options) {
     case "advanced-port_triggering-add.html":
       console.log(`Load ${page}`, Advanced.PortTriggering);
 
+      var oldLength = Advanced.PortTriggering.Rules.length;
       var filledData;
       var addFlag = false;
       if (Advanced.PortTriggering.onEdit === "") {
@@ -1036,11 +1037,40 @@ function loadPage(page, options) {
 
           if (addFlag === true) Advanced.PortTriggering.Rules.push(filledData);
 
-          applyThenStoreToLS(
-            "advanced-port_triggering.html",
-            "Apply",
-            Advanced
-          );
+          var subOption;
+          var cloneData = deepCopyObject(Advanced.PortTriggering.Rules);
+          cloneData.forEach((dataItem, index) => {
+            dataItem.TrigerProtocol = textContentConverting(
+              triggerProtocol,
+              dataItem.TrigerProtocol
+            );
+            dataItem.IncomingProtocol = textContentConverting(
+              incomingPortProtocol,
+              dataItem.IncomingProtocol
+            );
+          });
+          console.log(cloneData);
+          if (addFlag === true) {
+            subOption = oldLength;
+            httpService.send_POST_Request(
+              page,
+              COMMAND.USER_CONFIG_DATA.ADD,
+              cloneData[parseInt(subOption)],
+              Advanced,
+              subOption,
+              "advanced-port_triggering.html"
+            );
+          } else {
+            subOption = Advanced.PortTriggering.onEdit;
+            httpService.send_POST_Request(
+              page,
+              COMMAND.USER_CONFIG_DATA.MODIFY,
+              cloneData[parseInt(subOption)],
+              Advanced,
+              subOption,
+              "advanced-port_triggering.html"
+            );
+          }
         } else {
           console.log("Apply fail");
         }
@@ -1099,10 +1129,16 @@ function loadPage(page, options) {
                 parseInt(index), // because the first line is text of name
                 1
               );
-              applyThenStoreToLS(
-                "advanced-port_triggering.html",
-                "Apply",
-                Advanced
+              var cloneData = deepCopyObject(Advanced.PortTriggering.Rules);
+              var subOption = index;
+              page = "advanced-port_triggering.html";
+              console.log(cloneData);
+              httpService.send_POST_Request(
+                page,
+                COMMAND.USER_CONFIG_DATA.DELETE,
+                cloneData,
+                Advanced,
+                subOption
               );
             }
           });

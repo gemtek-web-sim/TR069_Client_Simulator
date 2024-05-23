@@ -148,6 +148,15 @@ app.post("/be_set", async (request, response) => {
         break;
       case COMMAND.USER_CONFIG_DATA.DELETE:
         await dbService.delValue(inform);
+        if (!Array.isArray(request.body.data)) {
+          utils.sendResponseToFE(
+            response,
+            400,
+            `The request.body.data MUST be an array`
+          );
+          return;
+        }
+        await dbService.reIndex(inform, request.body.data.length + 1);
         // reload to remove the abundant document (created by DB mechanism)
         await dbService.reloadDatabase();
         utils.sendResponseToFE(response, 200, "OK");

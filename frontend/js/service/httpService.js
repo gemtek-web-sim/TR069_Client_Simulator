@@ -29,7 +29,7 @@ const httpService = {
       return;
     }
   },
-  send_POST_Request: function (page, command, payload, lsDB_data, subOption) {
+  send_POST_Request: function (page, command, payload, lsDB_data, subOption, redirect) {
     // block screen by "Please wait"
     const ajaxLoaderSection = document.getElementById("ajaxLoaderSection");
     ajaxLoaderSection.style.display = "block";
@@ -42,7 +42,10 @@ const httpService = {
         // Status 200
         if (response.ok) {
           // load data to Local Storage if no error
-          applyThenStoreToLS(page, "Apply", lsDB_data, response.content);
+          if (redirect)
+            applyThenStoreToLS(redirect, "Apply", lsDB_data, response.content);
+          else
+            applyThenStoreToLS(page, "Apply", lsDB_data, response.content);
           ajaxLoaderSection.style.display = "none";
         } else {
           console.error("[ERROR] ", response.statusText);

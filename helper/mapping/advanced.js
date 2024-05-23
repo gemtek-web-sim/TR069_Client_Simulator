@@ -19,6 +19,7 @@
  */
 function mapping(command, page, lsData, subOption) {
   console.log("\n=== helper.mapping.advanced.mapping() ===");
+  console.log("\lsData = \n", lsData);
   var returnVal = {};
   switch (page) {
     case "advanced-alg.html":
@@ -53,10 +54,23 @@ function mapping(command, page, lsData, subOption) {
     case "advanced-port_mapping.html":
       break;
     case "advanced-port_triggering-add.html":
+      var complexPrefixes = ["Device.NAT.X_GTK_PortTriggering"];
+      var dbIndex = parseInt(subOption) + 1;
+      returnVal[`${complexPrefixes[0]}.${dbIndex}`]                     = ["true", "false", "", ""];
+      returnVal[`${complexPrefixes[0]}.${dbIndex}.Enable`]              = ["false", "true", lsData.EnaRule.toString(), "xsd:boolean"];
+      returnVal[`${complexPrefixes[0]}.${dbIndex}.TriggerPort`]         = ["false", "true", lsData.TrigerPort, "xsd:unsignedInt"];
+      returnVal[`${complexPrefixes[0]}.${dbIndex}.TriggerProtocol`]     = ["false", "true", lsData.TrigerProtocol, "xsd:string"];
+      returnVal[`${complexPrefixes[0]}.${dbIndex}.TriggerPortEndRange`] = ["false", "true", lsData.TrigerPortRange, "xsd:unsignedInt"];
+      returnVal[`${complexPrefixes[0]}.${dbIndex}.OpenPort`]            = ["false", "true", lsData.IncomingPort, "xsd:unsignedInt"];
+      returnVal[`${complexPrefixes[0]}.${dbIndex}.OpenPortEndRange`]    = ["false", "true", lsData.IncomingPortRange, "xsd:unsignedInt"];
+      returnVal[`${complexPrefixes[0]}.${dbIndex}.OpenProtocol`]        = ["false", "true", lsData.IncomingProtocol, "xsd:string"];
+      returnVal[`${complexPrefixes[0]}.${dbIndex}.Alias`]               = ["false", "true", `cpe-${dbIndex}`, "xsd:string"];
       break;
     case "advanced-port_triggering.html":
+      returnVal = [`Device.NAT.X_GTK_PortTriggering.${parseInt(subOption) + 1}`];
       break;
     case "advanced-static_routing-add.html":
+
       break;
     case "advanced-static_routing-ipv6Config-add.html":
       break;

@@ -86,3 +86,7 @@ function createPOSTRequest(page, command, payload, subOption) {
 function deepCopyObject(obj) {
   return JSON.parse(JSON.stringify(obj));
 }
+
+function textContentConverting(selectElements, selectedIndex) {
+  return selectElements.options[selectedIndex].textContent.trim();
+}

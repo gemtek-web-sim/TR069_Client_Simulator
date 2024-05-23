@@ -42,7 +42,7 @@ function reloadDatabase() {
   return new Promise((resolve, reject) => {
     getDBinstance().loadDatabase((err) => {
       if (err) reject(`[ERROR] dbService.reloadDatabase() fail, ${err}`);
-      console.log("==========> Reload DB success");
+      console.log("\n==========> Reload DB success");
       resolve();
     });
   });
@@ -327,6 +327,91 @@ function initDB() {
   });
 }
 
+function updateOneParam(oldParam, newParam) {
+  return new Promise((resolve, reject)  => {
+    getDBinstance().update(
+      { Parameter: oldParam },
+      { $set: { Parameter: newParam } },
+      {},
+      function (error, numReplaced) {
+        if (error)
+          reject(
+            `[ERROR] dbService.updateParameters(): getDBinstance().update() fail, ${error}`
+          );
+        if (numReplaced == 0) {
+          console.log(
+            `* [NO REJECT ERROR] dbService.updateParameters(): Cannot find the Parameter: ${oldParam} to replace --> resolve to continue`
+          );
+          resolve();
+        }
+        console.log(`Update Param: ${oldParam} ---> ${newParam} success`);
+        resolve();
+      }
+    );
+  });
+}
+
+function updateParameters(oldKey, newKey) {
+  return new Promise((resolve, reject) => {
+    try {
+      // console.log(`\n === dbService.updateParameters() ===`);
+      // console.log(`Old param pattern: ${oldKey} ---> New param pattern: ${newKey}`);
+
+      const pattern = new RegExp(oldKey);
+      // find all key with oldKey as pattern
+      getDBinstance().find(
+        { Parameter: { $regex: pattern } },
+        async function (err, docs) {
+          if (err)
+            reject(
+              `[ERROR] dbService.updateParameters(): getDBinstance().find() fail, ${err}`
+            );
+          let paramObjArr = [];
+          let tempObj = {};
+          let newParam;
+          // retrieve the document that match the pattern to replace the param with the new param
+          for (const obj of docs) {
+            newParam = obj.Parameter.replace(pattern, newKey);
+            tempObj = {
+              oldParam: obj.Parameter,
+              newParam: newParam,
+            };
+            paramObjArr.push(tempObj);
+          }
+          // console.log("Update these parameters", paramObjArr);
+          // replace the parameters
+          for (const paramObj of paramObjArr) {
+            // replace all the Parameters that match the oldKey pattern with new index
+            await updateOneParam(paramObj.oldParam, paramObj.newParam);
+          }
+          resolve();
+        }
+      );
+    } catch (try_err) {
+      reject(`[ERROR] dbService.updateParameters() fail,`, try_err);
+    }
+  });
+}
+
+async function reIndex(delPatterns, lastIndex) {
+  try {
+    console.log(`\n=== dbService.reIndex() ===`);
+
+    var deletedIndex = parseInt(delPatterns[0][delPatterns[0].length - 1]); // take the last charactre (it should be a number) of string
+    var oldKey, newKey;
+    console.log(`deletedIndex: ${deletedIndex}, lastIndex: ${lastIndex}`);
+    for (var i = deletedIndex + 1; i <= lastIndex; i++) {
+      for (const pattern of delPatterns) {
+        oldKey = pattern.slice(0, -1) + i.toString();
+        newKey = pattern.slice(0, -1) + (i - 1).toString();
+        await updateParameters(oldKey, newKey);
+      }
+    }
+  } catch (err_) {
+    throw `[Error] dbService.reIndex() fail, ${err_}`;
+  }
+}
+
 module.exports = {
   addValue,
   modValue,
@@ -334,6 +419,7 @@ module.exports = {
   complexValueHandler,
   reloadDatabase,
   getValue,
+  reIndex,
   initDB,
   getDBinstance,
   createDBinstance,

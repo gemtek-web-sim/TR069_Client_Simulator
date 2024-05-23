@@ -191,15 +191,6 @@ Device.NAT.PortMapping.1.X_GTK_INTERFACE,false,true,,xsd:string
 Device.NAT.X_GTK_DMZ,true,false,,
 Device.NAT.X_GTK_DMZ.Enable,false,true,false,xsd:boolean
 Device.NAT.X_GTK_DMZ.IPAddress,false,true,0.0.0.0,xsd:string
-Device.NAT.X_GTK_PortTriggering.1,true,false,,
-Device.NAT.X_GTK_PortTriggering.1.Enable,false,true,true,xsd:boolean
-Device.NAT.X_GTK_PortTriggering.1.TriggerPort,false,true,56,xsd:unsignedInt
-Device.NAT.X_GTK_PortTriggering.1.TriggerProtocol,false,true,TCP,xsd:string
-Device.NAT.X_GTK_PortTriggering.1.TriggerPortEndRange,false,true,98,xsd:unsignedInt
-Device.NAT.X_GTK_PortTriggering.1.OpenPort,false,true,456,xsd:unsignedInt
-Device.NAT.X_GTK_PortTriggering.1.OpenPortEndRange,false,true,789,xsd:unsignedInt
-Device.NAT.X_GTK_PortTriggering.1.OpenProtocol,false,true,TCP,xsd:string
-Device.NAT.X_GTK_PortTriggering.1.Alias,false,true,cpe-1,xsd:string
 Device.NAT.X_GTK_ALG,true,false,,
 Device.NAT.X_GTK_ALG.TFTP,false,true,true,xsd:boolean
 Device.NAT.X_GTK_ALG.FTP,false,true,true,xsd:boolean
