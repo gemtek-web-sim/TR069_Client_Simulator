@@ -236,6 +236,8 @@ function loadPage(page, options) {
         acsUrl.value = Advanced.DeviceManagement.ACSURL;
         acsUsername.value = Advanced.DeviceManagement.ACSUsername;
         acsPassword.value = Advanced.DeviceManagement.ACSPassword;
+        connectionRequestURL.value =
+          Advanced.DeviceManagement.ConnectionReqURL || "";
         connectionReqUsername.value =
           Advanced.DeviceManagement.ConnectionReqUsername;
         connectionReqPwd.value = Advanced.DeviceManagement.ConnectionReqPasword;
@@ -266,12 +268,14 @@ function loadPage(page, options) {
           var cloneData = Object.assign({}, Advanced.DeviceManagement);
           cloneData.LocalWANInterface =
             Basic.WAN.Interfaces[parseInt(cloneData.LocalWANInterface)].Name; // mapping value with actual Interface
+          var subOption = "";
           // connect ACS server
           httpService.send_POST_Request(
             page,
             COMMAND.SEND_INFORM,
             cloneData,
-            Advanced
+            Advanced,
+            subOption
           );
         }
       });
@@ -296,12 +300,14 @@ function loadPage(page, options) {
           var cloneData = Object.assign({}, Advanced.DeviceManagement);
           cloneData.LocalWANInterface =
             Basic.WAN.Interfaces[parseInt(cloneData.LocalWANInterface)].Name; // mapping value with actual Interface
+          var subOption = "";
           // connect ACS server
           httpService.send_POST_Request(
             page,
             COMMAND.CONNECT_ACS,
             cloneData,
-            Advanced
+            Advanced,
+            subOption
           );
         } else {
           console.log("Apply fail");

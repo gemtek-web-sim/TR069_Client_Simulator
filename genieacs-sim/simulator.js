@@ -331,7 +331,6 @@ function start(dataModel, serialNumber, acsUrl, response_instance) {
       200,
       "Connection to ACS Server exists"
     );
-    return;
   }
 
   device = dataModel;

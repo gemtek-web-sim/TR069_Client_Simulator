@@ -32,10 +32,6 @@ Device.DHCPv4.Server.Pool.1.IPRouters,false,true,192.168.1.1,xsd:string
 Device.DHCPv4.Server.Pool.1.DNSServers,false,true,192.168.1.1,xsd:string
 Device.DHCPv4.Server.Pool.1.StaticAddressNumberOfEntries,false,false,0,xsd:unsignedInt
 Device.DHCPv4.Server.Pool.1.ReservedAddresses,false,true,,xsd:string
-Device.DHCPv4.Server.Pool.1.StaticAddress.1.,true,false,,
-Device.DHCPv4.Server.Pool.1.StaticAddress.1.Enable,false,false,,xsd:boolean
-Device.DHCPv4.Server.Pool.1.StaticAddress.1.Chaddr,false,true,,xsd:string
-Device.DHCPv4.Server.Pool.1.StaticAddress.1.Yiaddr,false,true,,xsd:string
 Device.DHCPv4.Relay,true,false,,
 Device.DHCPv4.Relay.ForwardingNumberOfEntries,false,false,0,xsd:unsignedInt
 Device.DHCPv4.Relay.Forwarding.1,true,false,,

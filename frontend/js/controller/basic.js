@@ -27,13 +27,23 @@ function loadPage(page, options) {
       }
 
       refreshBtn.addEventListener("click", () => {
-        applyThenStoreToLS(page, "Cancel");
+        //applyThenStoreToLS(page, "Cancel");
+        // create body for post request
+        var cloneData = Object.assign({}, Basic.LAN.DeviceConnected);
+        console.log("Data sent: Basic.LAN.DeviceConnected", cloneData);
+        httpService.send_POST_Request(
+          page,
+          COMMAND.USER_CONFIG_DATA.MODIFY,
+          cloneData,
+          Basic
+        );
       });
       break;
     case "basic-lan-ipv4Config.html":
       console.log(`Load ${page}`, Basic.LAN.IPv4Configuration);
 
       var filledData = Basic.LAN.IPv4Configuration;
+      var oldLength = Basic.LAN.IPv4Configuration.IPAddressReservation.length;
 
       var devIPAddr = document.getElementById("IPAddress");
       var subnetMask = document.getElementById("SubnetMask");
@@ -380,8 +390,18 @@ function loadPage(page, options) {
               IP: value[1],
             });
           }
-          console.log("Basic.LAN.IPv4", filledData);
-          applyThenStoreToLS(page, "Apply", Basic);
+          //applyThenStoreToLS(page, "Apply", Basic);
+          // create body for post request
+          var cloneData = Object.assign({}, Basic.LAN.IPv4Configuration);
+          var subOption = oldLength;
+          console.log("Data sent: Basic.LAN.IPv4", cloneData);
+          httpService.send_POST_Request(
+            page,
+            COMMAND.USER_CONFIG_DATA.COMPLEX,
+            cloneData,
+            Basic,
+            subOption
+          );
         } else {
           console.log("Apply fail");
         }

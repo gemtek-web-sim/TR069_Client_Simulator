@@ -1,11 +1,23 @@
 "use strict";
 
 /**
+ * @NOTE Mapping template:
+ *          [Object, Writable, Value, Value type]
+ *      Ex: ["true", "false", lsData.ACSURL, "xsd::string"]
+ */
+
+/**
  * @brief Mapping Local Storage data from Advanced category
+ * @param {*} command   : command from FE
  * @param {*} page      : which page
  * @param {*} lsData    : data from Local Storage
+ * @param {*} subOption    : 
+ *        ADD      : the OLD LENGTH of the array data before Apply or the NEXT INDEX (depend on how you like to index the mapping data model)
+ *        MODIFY   : the modified index
+ *        DELETE   : the OLD LENGTH of the array data before Apply
+ *        COMPLEX  : the OLD LENGTH of the array data before Apply
  */
-function mapping(page, lsData) {
+function mapping(command, page, lsData, subOption) {
   console.log("\n=== helper.mapping.advanced.mapping() ===");
   var returnVal = {};
   switch (page) {
@@ -15,18 +27,15 @@ function mapping(page, lsData) {
       break;
     case "advanced-device_management.html":
       returnVal = {
-        "Device.ManagementServer.EnableCWMP": lsData.EnaCWMP,
-        "Device.ManagementServer.URL": lsData.ACSURL,
-        "Device.ManagementServer.Username": lsData.ACSUsername,
-        "Device.ManagementServer.Password": lsData.ACSPassword,
-        "Device.ManagementServer.PeriodicInformEnable": lsData.EnaPerodic,
-        "Device.ManagementServer.PeriodicInformInterval":
-          lsData.PerodicInterval,
-        "Device.ManagementServer.X_GTK_Interface": lsData.LocalWANInterface,
-        "Device.ManagementServer.ConnectionRequestUsername":
-          lsData.ConnectionReqUsername,
-        "Device.ManagementServer.ConnectionRequestPassword":
-          lsData.ConnectionReqPasword,
+        "Device.ManagementServer.EnableCWMP"                : ["false", "true", lsData.EnaCWMP, "xsd::string"],
+        "Device.ManagementServer.URL"                       : ["false", "true", lsData.ACSURL, "xsd::string"],
+        "Device.ManagementServer.Username"                  : ["false", "true", lsData.ACSUsername, "xsd::string"],
+        "Device.ManagementServer.Password"                  : ["false", "true", lsData.ACSPassword, "xsd::string"],
+        "Device.ManagementServer.PeriodicInformEnable"      : ["false", "true", lsData.EnaPerodic, "xsd::string"],
+        "Device.ManagementServer.PeriodicInformInterval"    : ["false", "true", lsData.PerodicInterval, "xsd::string"],
+        "Device.ManagementServer.X_GTK_Interface"           : ["false", "true", lsData.LocalWANInterface, "xsd::string"],
+        "Device.ManagementServer.ConnectionRequestUsername" : ["false", "true", lsData.ConnectionReqUsername, "xsd::string"],
+        "Device.ManagementServer.ConnectionRequestPassword" : ["false", "true", lsData.ConnectionReqPasword, "xsd::string"],
       };
       break;
     case "advanced-dmz.html":

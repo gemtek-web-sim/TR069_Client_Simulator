@@ -8,7 +8,12 @@ const HTTP_INTERNAL_SERVER_ERROR = 500;
 const COMMAND = {
   CONNECT_ACS: "CONNECT_ACS", // send data at Apply action    (FE -> BE & response back)
   SEND_INFORM: "SEND_INFORM", // send inform actively         (FE -> BE, POST)
-  USER_CONFIG_DATA: "USER_CONFIG_DATA", // get data  from               (FE -> BE & response back)
+  USER_CONFIG_DATA: {
+    ADD: "USER_CONFIG_DATA_ADD",
+    MODIFY: "USER_CONFIG_DATA_MODIFY",
+    DELETE: "USER_CONFIG_DATA_DELETE",
+    COMPLEX: "USER_CONFIG_DATA_COMPLEX",
+  }, // get data  from               (FE -> BE & response back)
 };
 
 const httpService = {
@@ -24,13 +29,14 @@ const httpService = {
       return;
     }
   },
-  send_POST_Request: function (page, command, payload, lsDB_data) {
+  send_POST_Request: function (page, command, payload, lsDB_data, subOption) {
     // block screen by "Please wait"
     const ajaxLoaderSection = document.getElementById("ajaxLoaderSection");
     ajaxLoaderSection.style.display = "block";
+    console.log("subOption: ", subOption);
 
     try {
-      createPOSTRequest(page, command, payload).then((response) => {
+      createPOSTRequest(page, command, payload, subOption).then((response) => {
         console.log(">> Response from server ", response);
 
         // Status 200
@@ -42,6 +48,7 @@ const httpService = {
           console.error("[ERROR] ", response.statusText);
           ajaxLoaderSection.style.display = "none";
           alert(`Server response: ${response.status} - ${response.statusText}`);
+          applyThenStoreToLS(page, "Cancel");
         }
       });
     } catch (err) {

@@ -6,7 +6,7 @@
 
 const SIMULATOR_VERSION =
   "GemtekACSClient_t02_16May24"; /* Release version and tag tracking */
-  
+
 /**
  *
  * ===== Template data (at init it will load template data to local store then fill in HTML file)
@@ -87,8 +87,8 @@ const template = {
         EndAddress: "192.168.1.254",
         LeaseTime: 1,
         IPAddressReservation: [
-          { MAC: "12:12:12:12:12:12", IP: "192.168.1.2" },
-          { MAC: "13:13:13:13:13:13", IP: "192.168.1.3" },
+          // { MAC: "12:12:12:12:12:12", IP: "192.168.1.2" },
+          // { MAC: "13:13:13:13:13:13", IP: "192.168.1.3" },
         ],
       },
       IPv6Configuration: {
