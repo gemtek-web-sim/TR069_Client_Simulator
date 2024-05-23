@@ -224,6 +224,7 @@ const template = {
       ACSURL: "http://192.168.99.100:7547",
       ACSUsername: "admin",
       ACSPassword: "admin",
+      ConnectionReqURL: "",
       ConnectionReqUsername: "admin",
       ConnectionReqPasword: "admin",
       EnaPerodic: true,

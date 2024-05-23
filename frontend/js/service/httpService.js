@@ -42,7 +42,7 @@ const httpService = {
         // Status 200
         if (response.ok) {
           // load data to Local Storage if no error
-          applyThenStoreToLS(page, "Apply", lsDB_data);
+          applyThenStoreToLS(page, "Apply", lsDB_data, response.content);
           ajaxLoaderSection.style.display = "none";
         } else {
           console.error("[ERROR] ", response.statusText);

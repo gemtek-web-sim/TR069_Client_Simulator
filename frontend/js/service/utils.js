@@ -72,7 +72,8 @@ function createPOSTRequest(page, command, payload, subOption) {
     // send request
     const response = await fetch(SET_URL, option);
     const response_data = await response.json();
-    console.log(response_data);
+    console.log(response_data.content);
+    response.content = response_data.content;
     resolve(response);
   });
 }

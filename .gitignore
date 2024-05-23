@@ -10,6 +10,7 @@ package-lock.json
 # Serial number
 database/SerialNumber.txt
 database/db_data_model*
+database/db_json_view.json
 
 # log file
 log/*

@@ -63,6 +63,7 @@ function applyThenStoreToLS(page, option, change_entity) {
         break;
       case "advanced-device_management.html":
         Advanced = change_entity;
+        Advanced.DeviceManagement.ConnectionReqURL = arguments[3] || "";
         break;
       case "advanced-dmz.html":
         Advanced = change_entity;
@@ -248,10 +249,9 @@ function applyThenStoreToLS(page, option, change_entity) {
     localStorage.setItem("Utilities", JSON.stringify(Utilities));
     localStorage.setItem("VoIP", JSON.stringify(VoIP));
     console.log("Load data into Local Storage success");
-  } else {
-    // redirect to next page or reload current page
-    window.location.href = page;
   }
+  // redirect to next page or reload current page
+  window.location.href = page;
 }
 
 function manageJSONData(keyJSON, jsonPath, data, option) {

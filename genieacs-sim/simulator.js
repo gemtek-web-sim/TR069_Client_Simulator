@@ -380,7 +380,7 @@ function start(dataModel, serialNumber, acsUrl, response_instance) {
       utils.sendResponseToFE(
         response_instance,
         200,
-        "Connect to ACS Server Success"
+        `${connectionRequestUrl}`
       );
     })
     .catch((err) => {

@@ -225,14 +225,6 @@ function loadPage(page, options) {
         localWANInterfaceSelect.value =
           Advanced.DeviceManagement.LocalWANInterface;
 
-        // if Enable --> take IP of WAN interface
-        if (enaCWMP.checked === true) {
-          connectionRequestURL.value = `http://${
-            Basic.WAN.Interfaces[parseInt(localWANInterfaceSelect.value)]
-              .IPAddress
-          }:7547/`;
-        }
-
         acsUrl.value = Advanced.DeviceManagement.ACSURL;
         acsUsername.value = Advanced.DeviceManagement.ACSUsername;
         acsPassword.value = Advanced.DeviceManagement.ACSPassword;
