@@ -134,7 +134,8 @@
     <script src="./js/storage.js"></script>
     <script src="./js/commonFunction.js"></script>
     <script src="./js/controller/wifi.js"></script>
-
+    <script src="./js/service/httpService.js"></script>
+    <script src="./js/service/utils.js"></script>
     <script>
       window.onload = () => {
         checkVersion();
@@ -1037,9 +1038,9 @@
                             required=""
                             class="ng-pristine ng-valid ng-valid-required ng-touched"
                           >
-                            <option value="0">Disabled</option>
-                            <option value="1">Allow</option>
-                            <option value="2">Deny</option>
+                            <option value="Disabled">Disabled</option>
+                            <option value="Allow">Allow</option>
+                            <option value="Deny">Deny</option>
                           </select>
                         </div>
                       </div>

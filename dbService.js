@@ -155,7 +155,7 @@ function delOneValue(key) {
             reject(
               `[ERROR] dbService.delOneValue cannot find Object Parameter: ${key} to remove`
             );
-          console.log("Delete One successfully");
+          console.log("Delete parameters successfully, pattern: ", key);
           resolve();
         }
       );
