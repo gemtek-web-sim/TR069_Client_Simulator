@@ -86,10 +86,7 @@ const template = {
         BeginAddress: "192.168.1.2",
         EndAddress: "192.168.1.254",
         LeaseTime: 1,
-        IPAddressReservation: [
-          // { MAC: "12:12:12:12:12:12", IP: "192.168.1.2" },
-          // { MAC: "13:13:13:13:13:13", IP: "192.168.1.3" },
-        ],
+        IPAddressReservation: [],
       },
       IPv6Configuration: {
         Enable: true,

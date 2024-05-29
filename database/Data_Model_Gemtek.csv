@@ -23,14 +23,13 @@ Device.DHCPv4.,true,false,,
 Device.DHCPv4.Server,true,false,,
 Device.DHCPv4.Server.PoolNumberOfEntries,false,false,1,xsd:unsignedInt
 Device.DHCPv4.Server.Pool.1.,true,,,
-Device.DHCPv4.Server.Pool.1.Enable,false,true,1,xsd:boolean
+Device.DHCPv4.Server.Pool.1.Enable,false,true,Server,xsd:boolean
 Device.DHCPv4.Server.Pool.1.MinAddress,false,true,192.168.1.2,xsd:string
 Device.DHCPv4.Server.Pool.1.MaxAddress,false,true,192.168.1.254,xsd:string
 Device.DHCPv4.Server.Pool.1.LeaseTime,false,true,86400,xsd:int
 Device.DHCPv4.Server.Pool.1.SubnetMask,false,true,255.255.255.0,xsd:string
 Device.DHCPv4.Server.Pool.1.IPRouters,false,true,192.168.1.1,xsd:string
 Device.DHCPv4.Server.Pool.1.DNSServers,false,true,192.168.1.1,xsd:string
-Device.DHCPv4.Server.Pool.1.StaticAddressNumberOfEntries,false,false,0,xsd:unsignedInt
 Device.DHCPv4.Server.Pool.1.ReservedAddresses,false,true,,xsd:string
 Device.DHCPv4.Relay,true,false,,
 Device.DHCPv4.Relay.ForwardingNumberOfEntries,false,false,0,xsd:unsignedInt
@@ -138,7 +137,14 @@ Device.Firewall.X_GTK_ParentalControl.Rule.1.TimeEnd,false,true,12:47,xsd:string
 Device.Firewall.X_GTK_ParentalControl.Rule.1.Target,false,true,Accept,xsd:string
 Device.Firewall.X_GTK_ParentalControl.Rule.1.DaysOfTheWeek,false,true,Thu,xsd:string
 Device.Hosts,true,false,,
-Device.Hosts.HostNumberOfEntries,false,false,1,xsd:unsignedInt
+Device.Hosts.HostNumberOfEntries,false,false,2,xsd:unsignedInt
+Device.Hosts.Host.0,true,false,,
+Device.Hosts.Host.0.HostName,false,true,DESKTOP-DL2F1BS,xsd::string
+Device.Hosts.Host.0.PhysAddress,false,true,ac:1a:3d:91:fc:cb,xsd::string
+Device.Hosts.Host.0.IPAddress,false,true,192.168.1.2,xsd::string
+Device.Hosts.Host.0.HostName,false,true,DESKTOP-ABS145B,xsd::string
+Device.Hosts.Host.0.PhysAddress,false,true,77:1a:3d:43:2e:cb,xsd::string
+Device.Hosts.Host.0.IPAddress,false,true,192.168.1.15,xsd::string
 Device.Hosts.Host.1,true,false,,
 Device.Hosts.Host.1.PhysAddress,false,false,50:eb:f6:d9:cc:79,xsd:string
 Device.Hosts.Host.1.IPAddress,false,false,192.168.1.5,xsd:string
@@ -359,11 +365,13 @@ Device.IP.Interface.1.IPv6Address.2.PreferredLifetime,false,true,9999-12-31T23:5
 Device.IP.Interface.1.IPv6Address.2.ValidLifetime,false,true,9999-12-31T23:59:59Z,
 Device.IP.Interface.1.IPv6Address.2.NextHop,false,false,,
 Device.IP.Interface.1.IPv6Address.2.X_GTK_Description,false,false,,
+Device.IP.ULAPrefix,false,true,fd00::,xsd::string,
 Device.X_GTK_IPv6,true,false,,
-Device.X_GTK_IPv6.Enable,false,true,1,xsd:boolean
+Device.X_GTK_IPv6.Enable,false,true,true,xsd:boolean
 Device.X_GTK_IPv6.ModesSupported,false,false,"Stateless Address Autoconfiguration,Stateless Address Autoconfig6",xsd:string
 Device.X_GTK_IPv6.LANMode,false,true,Stateless Address Autoconfiguration + Stateless DHCPv6,xsd:string
-Device.X_GTK_IPv6.DNS,false,true,fd00::1,xsd:string
+Device.X_GTK_IPv6.X_GTK_PRI_DNSv6,false,true,fd00::1,xsd::string
+Device.X_GTK_IPv6.X_GTK_SEC_DNSv6,false,true,'',xsd::string
 Device.X_GTK_IPv6.Domain,false,true,gemtek.com,xsd:string
 Device.X_GTK_IPSec,true,false,,
 Device.X_GTK_IPSec.TunnelNumberOfEntries,false,true,,xsd:unsignedInt

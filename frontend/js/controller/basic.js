@@ -27,16 +27,7 @@ function loadPage(page, options) {
       }
 
       refreshBtn.addEventListener("click", () => {
-        //applyThenStoreToLS(page, "Cancel");
-        // create body for post request
-        var cloneData = Object.assign({}, Basic.LAN.DeviceConnected);
-        console.log("Data sent: Basic.LAN.DeviceConnected", cloneData);
-        httpService.send_POST_Request(
-          page,
-          COMMAND.USER_CONFIG_DATA.MODIFY,
-          cloneData,
-          Basic
-        );
+        applyThenStoreToLS(page, "Cancel");
       });
       break;
     case "basic-lan-ipv4Config.html":
@@ -392,8 +383,11 @@ function loadPage(page, options) {
           }
           //applyThenStoreToLS(page, "Apply", Basic);
           // create body for post request
-          var cloneData = Object.assign({}, Basic.LAN.IPv4Configuration);
+          var cloneData = deepCopyObject(Basic.LAN.IPv4Configuration);
           var subOption = oldLength;
+          cloneData.DHCPMode = dhcpMode.options[dhcpMode.selectedIndex].text;
+          secondConvert = [3600, 86400, 604800]
+          cloneData.LeaseTime = secondConvert[parseInt(cloneData.LeaseTime)];
           console.log("Data sent: Basic.LAN.IPv4", cloneData);
           httpService.send_POST_Request(
             page,
@@ -490,7 +484,18 @@ function loadPage(page, options) {
           filledData.PrimaryDNSv6 = primaryDNSv6.value;
           filledData.SecondaryDNSv6 = secondDNSv6.value;
           filledData.DomainName = domainName.value;
-          applyThenStoreToLS(page, "Apply", Basic);
+          // applyThenStoreToLS(page, "Apply", Basic);
+          // create body for post request
+          var cloneData = deepCopyObject(Basic.LAN.IPv6Configuration);
+          cloneData.AutoConfigurationMode = autoConfigMode.options[autoConfigMode.selectedIndex].text;
+          console.log("Data sent: Basic.LAN.IPv6Configuration", cloneData);
+          httpService.send_POST_Request(
+            page,
+            COMMAND.USER_CONFIG_DATA.MODIFY,
+            cloneData,
+            Basic,
+            ""
+          );
         } else {
           console.log("Apply fail");
         }
@@ -1489,10 +1494,16 @@ function loadPage(page, options) {
         /** Check Error at common field */
         if (enableVLAN.checked === true) {
           elemAfterChange.VLAN = vlan_input.value;
-          if (/_.*_/.test(elemAfterChange.Name)){
-            elemAfterChange.Name = filledData.Name.replace(/_.*_/, `_${vlan_input.value}_`);
+          if (/_.*_/.test(elemAfterChange.Name)) {
+            elemAfterChange.Name = filledData.Name.replace(
+              /_.*_/,
+              `_${vlan_input.value}_`
+            );
           } else {
-            elemAfterChange.Name = filledData.Name.replace("_", `_${vlan_input.value}_`);
+            elemAfterChange.Name = filledData.Name.replace(
+              "_",
+              `_${vlan_input.value}_`
+            );
           }
           common_apply_flag &= checkError_show(
             document.querySelectorAll(".vlan_error")

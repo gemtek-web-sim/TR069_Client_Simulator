@@ -77,3 +77,12 @@ function createPOSTRequest(page, command, payload, subOption) {
     resolve(response);
   });
 }
+
+/**
+ * 
+ * @param {*} obj 
+ * @returns Object, that independent with original object change
+ */
+function deepCopyObject(obj) {
+  return JSON.parse(JSON.stringify(obj));
+}

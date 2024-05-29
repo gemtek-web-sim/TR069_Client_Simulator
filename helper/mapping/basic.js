@@ -22,6 +22,16 @@ function mapping(command, page, lsData, subOption) {
   console.log(`== helper.mapping.basic, mapping for ${page} with subOption: ${subOption} ===`);
   switch (page) {
     case "basic-lan-dev_connected.html":
+      // for (const index in lsData) {
+      //   if (lsData.hasOwnProperty(index)) {
+      //     const element = lsData[index];
+      //     const obj = `Device.Hosts.Host.${index}`;
+      //     returnVal[`${obj}`]             = ["true", "false", "", ""];
+      //     returnVal[`${obj}.HostName`]    = ["false", "true", element.HostName, "xsd::string"];
+      //     returnVal[`${obj}.PhysAddress`] = ["false", "true", element.MACAddress, "xsd::string"];
+      //     returnVal[`${obj}.IPAddress`]   = ["false", "true", element.IPAddress, "xsd::string"];
+      //   }
+      // }
       break;
     case "basic-lan-ipv4Config.html":
       var complexPrefix = ["Device.DHCPv4.Server.Pool.1.StaticAddress"];
@@ -45,6 +55,14 @@ function mapping(command, page, lsData, subOption) {
       });
       break;
     case "basic-lan-ipv6Config.html":
+      returnVal = {
+        "Device.X_GTK_IPv6.Enable"                      : ["false", "true", lsData.Enable, "xsd::boolean"],
+        "Device.X_GTK_IPv6.LANMode"                     : ["false", "true", lsData.AutoConfigurationMode, "xsd::string"],
+        "Device.IP.ULAPrefix"                           : ["false", "true", lsData.Prefix, "xsd::string"],
+        "Device.X_GTK_IPv6.X_GTK_PRI_DNSv6"             : ["false", "true", lsData.PrimaryDNSv6, "xsd::string"],
+        "Device.X_GTK_IPv6.X_GTK_SEC_DNSv6"             : ["false", "true", lsData.SecondaryDNSv6, "xsd::string"],
+        "Device.X_GTK_IPv6.Domain"                      : ["false", "true", lsData.EndAddress, "xsd::string"],
+      };
       break;
     case "basic-registration_ID.html":
       break;

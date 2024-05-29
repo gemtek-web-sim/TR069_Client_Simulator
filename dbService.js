@@ -59,24 +59,37 @@ function addOneValue(key, value) {
       // console.log("\n === dbService.addOneValue() ===");
       // console.log(`ADD --- Param: ${key}, Val: ${value}`);
 
-      // Add - Insert new one
-      getDBinstance().insert(
-        {
-          Parameter: key,
-          Object: value[0],
-          Writable: value[1],
-          Value: value[2],
-          "Value type": value[3],
-        },
-        function (error, newDoc) {
-          if (error) {
-            reject(
-              `[ERROR] dbService.addOneValue: getDBinstance().insert() fail, ${error}`
-            );
-          }
+      getDBinstance().findOne({ Parameter: key }, function (finderr, doc) {
+        if (finderr)
+          reject(
+            `[ERROR] dbService.addOneValue: getDBinstance().findOne() fail, ${finderr}`
+          );
+        if (doc !== null) {
+          console.log(
+            `[NO REJECT ERROR] dbService.addOneValue: Parameter: ${key} already existed --> IGNORE --> resolve()`
+          );
           resolve();
         }
-      );
+        // If no document is found, doc is null
+        // Add - Insert new one
+        getDBinstance().insert(
+          {
+            Parameter: key,
+            Object: value[0],
+            Writable: value[1],
+            Value: value[2],
+            "Value type": value[3],
+          },
+          function (error, newDoc) {
+            if (error) {
+              reject(
+                `[ERROR] dbService.addOneValue: getDBinstance().insert() fail, ${error}`
+              );
+            }
+            resolve();
+          }
+        );
+      });
     } catch (err_) {
       reject`[Error] dbService.addOneValue() fail, ${err_}`;
     }
