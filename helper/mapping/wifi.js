@@ -71,14 +71,16 @@ function mapping(command, page, lsData, oldLength) {
       for (var key in lsData) {
         dbIndex = parseInt(key) + 1;
         // "Device.WiFi.SSID"
-        returnVal.complexPart[`${complexPrefixes[0]}.${dbIndex}`]               = ["true", "true", "", "xsd::string"];
+        if (key != 0) {
+          returnVal.complexPart[`${complexPrefixes[0]}.${dbIndex}`]               = ["true", "true", "", ""];
+        }
         returnVal.complexPart[`${complexPrefixes[0]}.${dbIndex}.LowerLayers`]   = ["false", "true", "Device.WiFi.Radio.1", "xsd::string"];
         returnVal.complexPart[`${complexPrefixes[0]}.${dbIndex}.Name`]          = ["false", "false", "wlan0.1", "xsd::string"];
         returnVal.complexPart[`${complexPrefixes[0]}.${dbIndex}.SSID`]          = ["false", "true", lsData[key].Configuration.SSID, "xsd::string"];
         returnVal.complexPart[`${complexPrefixes[0]}.${dbIndex}.X_LANTIQ_COM_Vendor_BridgeName`] = ["false", "true", lsData[key].BridgeName, "xsd::string"];
         // "Device.WiFi.AccessPoint"
         if (parseInt(key) !== 0) {
-          returnVal.complexPart[`${complexPrefixes[1]}.${dbIndex}`]                     = ["true", "true", "", "xsd::string"];
+          returnVal.complexPart[`${complexPrefixes[1]}.${dbIndex}`]                     = ["true", "true", "", ""];
           returnVal.complexPart[`${complexPrefixes[1]}.${dbIndex}.Security`]            = ["true", "false", "", ""];
           returnVal.complexPart[`${complexPrefixes[1]}.${dbIndex}.WPS`]                 = ["true", "false", "", ""];
           returnVal.complexPart[`${complexPrefixes[1]}.${dbIndex}.X_GTK_Vendor`]        = ["true", "false", "", ""];
@@ -180,7 +182,7 @@ function mapping(command, page, lsData, oldLength) {
         dbIndex = parseInt(key) + 5;
         // "Device.WiFi.SSID"
         if (key != 0) {
-          returnVal.complexPart[`${complexPrefixes[0]}.${dbIndex}`]           = ["true", "true", "", "xsd::string"];
+          returnVal.complexPart[`${complexPrefixes[0]}.${dbIndex}`]           = ["true", "true", "", ""];
         }
         returnVal.complexPart[`${complexPrefixes[0]}.${dbIndex}.LowerLayers`] = ["false", "true", "Device.WiFi.Radio.5", "xsd::string"];
         returnVal.complexPart[`${complexPrefixes[0]}.${dbIndex}.Name`]        = ["false", "false", "wlan2.2", "xsd::string"];
@@ -188,7 +190,7 @@ function mapping(command, page, lsData, oldLength) {
         returnVal.complexPart[`${complexPrefixes[0]}.${dbIndex}.X_LANTIQ_COM_Vendor_BridgeName`] = ["false", "true", lsData[key].BridgeName, "xsd::string"];
         // "Device.WiFi.AccessPoint"
         if (key != 0) {
-          returnVal.complexPart[`${complexPrefixes[1]}.${dbIndex}`]                     = ["true", "true", "", "xsd::string"];
+          returnVal.complexPart[`${complexPrefixes[1]}.${dbIndex}`]                     = ["true", "true", "", ""];
           returnVal.complexPart[`${complexPrefixes[1]}.${dbIndex}.Security`]            = ["true", "false", "", ""];
           returnVal.complexPart[`${complexPrefixes[1]}.${dbIndex}.WPS`]                 = ["true", "false", "", ""];
           returnVal.complexPart[`${complexPrefixes[1]}.${dbIndex}.X_GTK_Vendor`]        = ["true", "false", "", ""];
